@@ -63,24 +63,31 @@
 				    </header>
                 </section>
                 <form method="post" action="#">
-					<h3>Cast and crew</h3>
+					<h3>Let's introduce ourselves</h3>
 					<div class="row uniform">
-						<div class="12u 12u(2)">
-							<label for="director">Type main director's name</label>
-							<input type="text" name="name" id="director" value="" placeholder="Director" />
+						<div class="12u">
+							<label for="movies_name">What's your movie's name</label>
+							<input type="text" name="movies_name" id="movies_name" value="" placeholder="Movie's Name"/>
 						</div>
-						<div class="select-wrapper">
+					</div>
+					<h3 style="margin-top:50px">Cast and Crew</h3>
+					<div class="row uniform">
+						<div class="12u">
+							<label for="director">Type main director's name</label>
+							<input type="text" name="name" id="director" value="" placeholder="Director's Name" />
+						</div>
+						<div class="12u;select-wrapper">
 								<label for="first_character">First character gender</label>
 								<select name="first_character" id="first_character">
-									<option value="">Choose</option>
+									<option value="">Select</option>
 									<option value="1">Male</option>
 									<option value="2">Female</option>
 								</select>
 						</div>
-						<div class="select-wrapper">
+						<div class="12u;select-wrapper">
 								<label for="second_lead">Second character gender</label>
 								<select name="second_lead" id="second_lead">
-									<option value="">Choose</option>
+									<option value="">Select</option>
 									<option value="1">Male</option>
 									<option value="2">Female</option>
 								</select>
@@ -88,105 +95,95 @@
 					</div>
 					<h3 style="margin-top:50px">Movie plot</h3>
 					<div class="row uniform">
-						<div class="12u">
-							<div class="select-wrapper">
-								<label for="belongs_to_collection">Does the movie belong to a collection?</label>
+						<div class="12u;select-wrapper">
+							<label for="belongs_to_collection">Does the movie belong to a collection?</label>
 								<select name="belongs_to_collection" id="belongs_to_collection">
-									<option value="">Choose</option>
+									<option value="">Select</option>
 									<option value="0">No</option>
 									<option value="1">Yes</option>
 								</select>
-							</div>
 						</div>
 					</div>
 					<h3 style="margin-top:50px">Production features</h3>
 					<div class="row uniform">
-						<div class="12u">
-							<div class="select-wrapper">
-								<label for="language">What is the movie's original language?</label>
+						<div class="12u;select-wrapper">
+							<label for="language">What is the movie's original language?</label>
 								<select name="language" id="language">
-									<option value="">Choose</option>
+									<option value="">Select</option>
 									<option value="1">English</option>
 									<option value="0">Not Englsih</option>
 								</select>
-							</div>
 						</div>
-						<div class="12u 12u(2)">
+						<div class="12u">
 							<label for="production_company">Type main Production Company's name</label>
 							<input type="text" name="production_company" id="production_company" value="" placeholder="Production Company" />
 						</div>
-						<div class="12u 12u(2)">
+						<div class="12u">
 							<label for="companies_count">How many companies will produce the movie?</label>
 							<input type="text" name="companies_count" id="companies_count" value="1" placeholder="" />
 						</div>
-						<div class="12u 12u(2)">
+						<div class="12u">
 							<label for="runtime">How much do you expect your movie to last? (minutes)</label>
 							<input type="text" name="runtime" id="runtime" value="90" placeholder="" />
 						</div>
-						<div class="select-wrapper">
+						<div class="12u;select-wrapper">
 								<label for="imax">Are you launching an IMAX movie?</label>
 								<select name="imax" id="imax">
-									<option value="0">No</option>
-									<option value="1">Yes</option>
+									<option value="">Select</option>
+									<option value="">No</option>
+									<option value="imax">Yes</option>
 								</select>
 						</div>
-						<div class="select-wrapper">
+						<div class="12u;select-wrapper">
 								<label for="imax">Are you launching an 3D movie?</label>
 								<select name="3d" id="3d">
-									<option value="0">No</option>
-									<option value="1">Yes</option>
+									<option value="">Select</option>
+									<option value="">No</option>
+									<option value="3D">Yes</option>
 								</select>
 						</div>
 					</div>
-					<div class="row uniform">
-						<div class="12u">
-						<h3 style="margin-top:50px">Release date</h3>
-						<div class="select-wrapper">
-							<label for="release_month">When are you planning on releasing the movie? (month)</label>
-							<select name="release_month" id="release_month">
-								<option value="">Choose</option>
-								<option value="1">January</option>
-								<option value="2">February</option>
-								<option value="3">March</option>
-								<option value="4">April</option>
-								<option value="5">May</option>
-								<option value="6">June</option>
-								<option value="7">July</option>
-								<option value="8">August</option>
-								<option value="9">September</option>
-								<option value="10">October</option>
-								<option value="11">November</option>
-								<option value="12">December</option>
-							</select>
-						</div>
-						<div class="select-wrapper">
-							<label style="margin-top:20px" for="release_weekday">When are you planning on releasing the movie? (weekday)</label>
-							<select name="release_weekday" id="release_weekday">
-								<option value="">Choose</option>
-								<option value="1">Monday</option>
-								<option value="2">Tuesday</option>
-								<option value="3">Wednesday</option>
-								<option value="4">Thursday</option>
-								<option value="5">Friday</option>
-								<option value="6">Saturday</option>
-								<option value="7">Sunday</option>
-							</select>
-						</div>
+					<h3 style="margin-top:50px">Release date</h3>
+					<div class="12u;select-wrapper">
+						<label for="release_month">When are you planning on releasing the movie? (month)</label>
+						<select name="release_month" id="release_month">
+							<option value="">Select</option>
+							<option value="1">January</option>
+							<option value="2">February</option>
+							<option value="3">March</option>
+							<option value="4">April</option>
+							<option value="5">May</option>
+							<option value="6">June</option>
+							<option value="7">July</option>
+							<option value="8">August</option>
+							<option value="9">September</option>
+							<option value="10">October</option>
+							<option value="11">November</option>
+							<option value="12">December</option>
+						</select>
 					</div>
-					<div class="row uniform">
-                        <div class="12u 12u(2)">
-                        <h3 style="margin-top:50px">Keywords</h3>
-							<label for="keywords">Type keywords separated by commas</label>
-                            <textarea name="keywords" id="keywords" placeholder="Enter keywords" rows="6"></textarea>
-						</div>
+					<div class="12u;select-wrapper">
+						<label style="margin-top:20px" for="release_weekday">When are you planning on releasing the movie? (weekday)</label>
+						<select name="release_weekday" id="release_weekday">
+							<option value="">Select</option>
+							<option value="0">Monday</option>
+							<option value="1">Tuesday</option>
+							<option value="2">Wednesday</option>
+							<option value="3">Thursday</option>
+							<option value="4">Friday</option>
+							<option value="5">Saturday</option>
+							<option value="6">Sunday</option>
+						</select>
 					</div>
-                    <div class="row uniform">
-                        <div class="12u 12u(2)">
+					<h3 style="margin-top:50px">Keywords</h3>
+					<div class="12u;row uniform">
+						<label for="keywords">Type keywords separated by commas</label>
+						<textarea name="keywords" id="keywords" placeholder="Which keywords define your movie?" rows="6"></textarea>
+					</div>
+                    <div class="12u;row uniform" style="margin-top:60px" align="center">
 						<ul class="actions">
-                            <li><input type="submit" value="Get the number" /></li>
-                            <li><input type="reset" value="Reset" class="alt" /></li>
+							<li><input type="submit" value="Get the number" style="font-size:25px;margin-bottom:30px"></li>
                         </ul>
-						</div>
 					</div>
 				</form>
 			</div>
