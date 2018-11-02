@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128049794-1"></script>
+			<script>
+  				window.dataLayer = window.dataLayer || [];
+  				function gtag(){dataLayer.push(arguments);}
+  				gtag('js', new Date());
+
+  				gtag('config', 'UA-128049794-1');
+			</script>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content=""/>
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/jquery.scrollgress.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.slidertron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/skel.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style-xlarge.css')}}">
+
+		<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/ie/v9.css')}}"><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/ie/v.css')}}"><![endif]-->
+		<title>Cast's Index</title>
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header" class="skel-layers-fixed">
+				<nav id="nav">
+					<ul>
+						<li>
+							<a href="index.html" class="icon fa-angle-down">About Reves</a>
+							<ul>
+								<li><a href="reason-why.html">Reason why</a></li>
+								<li><a href="specifications.html">Specifications</a></li>
+								<li><a href="screenplayers.html">Screenplayers</a></li>
+							</ul>
+						</li>
+						<li><a href="show-me-the-money.html">Show me the money</a></li>
+						<li><a href="https://github.com/ElsaDuran/reves">View on Github</a></li>
+							</ul>
+					</ul>
+				</nav>
+			</header>
+
+        <section id="main" class="wrapper style1">
+				<header class="major">
+					<h2>Cast's Index</h2>
+				</header>
+				<div class="container">
+
+					<!-- Content -->
+						<section id="content">
+                            <p>Be sure to type correctly the name of your actors or actresses. Reves won't work correctely if you misspell any names.
+                            If the name is not on Reves' official list, Reves will apply a standard value based on mean so it won't affect the result, nor in a positive nor in a negative way.
+                            </br>
+                                </br>Hint: Use <code>Ctrl+F</code> to find the name you are looking for.</p>
+                            <ul>
+                                {% for element in cast %}
+                                <li>{{element}}</li>
+                                {%endfor%}
+                            </ul>
+
+                        </section>
+
+
+
+
+				</div>
+			</section>
+
+
+		<!-- Footer -->
+		<footer id="footer" <span style="background-color: #00b050" </span>
+		</p><span class="copyright" style="color: #ffffff">
+			&copy; Copyright. All rights reserved. Design by <a href="http://www.html5webtemplates.co.uk" style="color: #ffffff">Responsive Web Templates</a>
+			</span></p>
+		<p><img src="{{url_for("static",filename="images/reves_logo_mini_neg.jpg")}}"</p>
+		</footer>
+
+	<script type="text/javascript" src="{{url_for('static',filename='js/init.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static',filename='js/jquery.dropotron.min.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static',filename='js/jquery.scrollgress.min.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static',filename='js/jquery.scrolly.min.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static',filename='js/jquery.slidertron.min.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static',filename='js/skel.min.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static',filename='js/skel-layers.min.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static',filename='js/init.js')}}"></script>
+
+	</body>
+</html>

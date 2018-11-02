@@ -1,0 +1,188 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128049794-1"></script>
+			<script>
+  				window.dataLayer = window.dataLayer || [];
+  				function gtag(){dataLayer.push(arguments);}
+  				gtag('js', new Date());
+
+  				gtag('config', 'UA-128049794-1');
+			</script>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content=""/>
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.dropotron.min.js"></script>
+		<script src="js/jquery.scrollgress.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/jquery.slidertron.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+				<script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/skel.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css')}}">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style-xlarge.css')}}">
+
+		<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/ie/v9.css')}}"><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/ie/v.css')}}"><![endif]-->
+		<title>Get the number</title>
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header" class="skel-layers-fixed">
+				<nav id="nav">
+					<ul>
+						<li>
+							<a href="index.html" class="icon fa-angle-down">About Reves</a>
+							<ul>
+								<li><a href="reason-why.html">Reason why</a></li>
+								<li><a href="specifications.html">Specifications</a></li>
+								<li><a href="screenplayers.html">Screenplayers</a></li>
+							</ul>
+						</li>
+						<li><a href="show-me-the-money.html">Show me the money</a></li>
+						<li><a href="https://github.com/ElsaDuran/reves">View on Github</a></li>
+							</ul>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Form -->
+        {% block content %}
+		<section>
+			{% from "_macro.html" import render_field %}
+			<div class="container">
+			    <section id="main" class="wrapper style1">
+				    <header class="major">
+					    <h2>Get the number</h2>
+				    </header>
+                </section>
+                <form method="POST" action="" >
+					<h3>Let's introduce ourselves</h3>
+					<div class="row uniform">
+						<div class="12u">
+							{{render_field(form.name)}}
+						</div>
+					</div>
+					<h3 style="margin-top:50px">Cast and Crew</h3>
+					<div class="row uniform">
+						<div class="12u">
+							{{render_field(form.directors)}}
+							<a href="directors-index.html" target="_blank" style="font-size:15px"><span style="margin-left: 20px;margin-top:20px" class="fab fa-exclamation-circle fa-1x"></span>  Check the spelling. Directors' Index</a>
+						</div>
+						<div class="12u">
+							{{render_field(form.screenplayers)}}
+							<a href="screenplayers-index.html" target="_blank" style="font-size:15px"><span style="margin-left: 20px;margin-top:20px" class="fab fa-exclamation-circle fa-x"></span>  Check the spelling. Screenplayers' Index</a>
+						</div>
+						<div class="12u">
+							<p style="margin-top:5px">Now, Reves needs to know the names and genders of the main 4 actors/actresses in your movie. Make sure you type names correctely.</p>
+							<a href="cast-index.html" target="_blank" style="font-size:15px"><span style="margin-left: 20px;margin-top:-10px" class="fab fa-exclamation-circle fa-x"></span>  Check the spelling. Cast' Index</a>
+						</div>
+						<div class="6u 12u(3);select-wrapper">
+							{{render_field(form.cast1name)}}
+						</div>
+						<div class="6u 12u(3);select-wrapper">
+								{{render_field(form.cast1gender)}}
+						</div>
+						<div class="6u 12u(3);select-wrapper">
+								{{render_field(form.cast2name)}}
+						</div>
+						<div class="6u 12u(3);select-wrapper">
+								{{render_field(form.cast2gender)}}
+						</div>
+						<div class="6u 12u(3);select-wrapper">
+								{{render_field(form.cast3name)}}
+						</div>
+						<div class="6u 12u(3);select-wrapper">
+								{{render_field(form.cast3gender)}}
+						</div>
+						<div class="6u 12u(3);select-wrapper">
+								{{render_field(form.cast4name)}}
+						</div>
+						<div class="6u 12u(3);select-wrapper">
+								{{render_field(form.cast4gender)}}
+						</div>
+					</div>
+					<h3 style="margin-top:50px">Movie plot</h3>
+					<div class="row uniform">
+						<div class="6u 12u(3);select-wrapper">
+							{{render_field(form.bellongsToCollection)}}
+						</div>
+						<div class="6u 12u(3);select-wrapper">
+							{{render_field(form.collectionName)}}
+							<a href="collections-index.html" target="_blank" style="font-size:15px"><span style="margin-left: 20px;margin-top:20px" class="fab fa-exclamation-circle fa-1x"></span> Check the spelling. Collections' Index</a>
+						</div>
+					</div>
+					<h3 style="margin-top:50px">Production features</h3>
+					<div class="row uniform">
+						<div class="12u;select-wrapper">
+							{{render_field(form.originalLanguage)}}
+						</div>
+						<div class="12u">
+							{{render_field(form.productionCompanies)}}
+							<a href="companies-index.html" target="_blank" style="font-size:15px"><span style="margin-left: 20px;margin-top:20px" class="fab fa-exclamation-circle fa-1x"></span> Check the spelling. Companies' Index</a>
+						</div>
+						<div class="12u">
+							{{render_field(form.runtime)}}
+						</div>
+						<div class="12u;select-wrapper">
+							{{render_field(form.imax)}}
+						</div>
+						<div class="12u;select-wrapper">
+							{{render_field(form.d3)}}
+						</div>
+					</div>
+					<h3 style="margin-top:50px">Release date</h3>
+					<div class="12u;select-wrapper">
+						{{render_field(form.month)}}
+					</div>
+					<div class="12u;select-wrapper" style="margin-top:20px">
+						{{render_field(form.weekday)}}
+					</div>
+					<h3 style="margin-top:50px">Keywords</h3>
+					<div class="12u;row uniform">
+						{{render_field(form.keywords)}}
+						<a href="keywords-index.html" target="_blank" style="font-size:15px"><span style="margin-left: 20px;margin-top:20px" class="fab fa-exclamation-circle fa-1x"></span> Check Keyword's Index for examples</a>
+					</div>
+                    <div class="12u;row uniform" style="margin-top:60px" align="center">
+						<ul class="actions">
+							<li><input type="submit" value="Get the number" style="font-size:25px;margin-bottom:30px"></li>
+						</ul>
+					</div>
+				</form>
+			</div>
+        </section>
+		<!-- Are you a producer -->
+		<section id="cta" class="wrapper style2" style="background-color:#373737">
+			<p style="font-size:40px;color:#ffffff;margin-top:30px"> {{moviename}} revenue will be ${{revenue}}</p>
+    		<p style="color:#ffffff">Not enough? Try again! Change some parameters.</p>
+        {%endblock%}
+		</section>
+
+				
+		<!-- Footer -->
+		<footer id="footer" <span style="background-color: #00b050" </span>
+		</p><span class="copyright" style="color: #ffffff">
+			&copy; Copyright. All rights reserved. Design by <a href="http://www.html5webtemplates.co.uk" style="color: #ffffff">Responsive Web Templates</a>
+			</span></p>
+		<p><img src="{{url_for("static",filename="images/reves_logo_mini_neg.jpg")}}"</p>
+		</footer>
+
+	<script type="text/javascript" src="{{url_for('static',filename='js/init.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static',filename='js/jquery.dropotron.min.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static',filename='js/jquery.scrollgress.min.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static',filename='js/jquery.scrolly.min.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static',filename='js/jquery.slidertron.min.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static',filename='js/skel.min.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static',filename='js/skel-layers.min.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static',filename='js/init.js')}}"></script>
+
+	</body>
+</html>
