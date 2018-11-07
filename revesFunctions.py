@@ -96,33 +96,6 @@ def get_mean(values_list, variable_mean_dict):
     return np.mean(list(map(lambda x: variable_mean_dict[x] if x in variable_mean_dict else np.mean(list(variable_mean_dict.values())), values_list)))
 
 
-def get_male_count(input_list):   
-    """
-    This function counts how many men are in a list. 
-    It is needed that the values of the list are numbers: 1 if it is a woman, 2 if it is a man.
-    """
-    male = 0
-    for gender in input_list:
-        if gender == 2:
-            male += 1
-    return male
-
-
-
-def get_female_count(input_list):   
-    """
-    This function counts how many women are in a list. 
-    It is needed that the values of the list are numbers: 1 if it is a woman, 2 if it is a man.
-    """
-    female = 0
-    for gender in input_list:
-        if gender == 1:
-            female += 1
-    return female
-
-
-
-
 def clean(line):
     """
     This function cleans a string removing all special characters, remove accents and double spaces between words
