@@ -128,3 +128,13 @@ def clean(line):
     This function cleans a string removing all special characters, remove accents and double spaces between words
     """
     return " ".join(unidecode.unidecode(re.sub("[^\w ]", "", line).lower().strip()).split())
+
+
+def lenght(column):
+    """
+     This function takes a column and returns the lenght of each element in a new list to append to a DataFrame as a new column.
+     """
+    element_lenght=[]
+    for line in reves[column]:
+        element_lenght.append(len(line))
+    return element_lenght

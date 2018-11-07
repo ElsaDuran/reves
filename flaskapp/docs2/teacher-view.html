@@ -54,7 +54,7 @@
 		<!-- Banner -->
 			<section id="banner">
 				<div class="inner">
-					<img src="images/reves_logo_negative.png">
+					<img src="{{ url_for('static',filename='images/reves_logo_negative.png')}}">
 					<h2>Predicting movie revenue from basic movie features.</h2>
 					<p style="color: #ffffff">Developed by Carlos Ferrer-Bonsoms & Elsa Durán</p>
 					<p style="color: #ffffff;font-weight:bold;font-size:40px">Teacher's view  <span style="height:35px;margin-bottom:5px" class="fas fa-apple-alt"></span></p>
@@ -97,8 +97,10 @@
 					<li>Python: for data cleaning, engineering and modelling.</li>
 					<li>Tableau for data exploration.</li>
 					<li>HTML & CSS for web front-end.</li>
-					<li>Flask for web app backend.</li>
-					<li>Google Colab and Keras for Deep Learning Bonus Track</li></ul></p>
+					<li>Flask for web app back-end.</li>
+					<li>Heroku for web app hosting and publishing.</li>
+				</ul></p>
+
 					<h3>Why would it relevant for the industry?</h3>
 						<p>Although the accuracy of our model is conditioned to the limited ammount of data we have in this public dataset, Reves hasn’t work its magic yet. It has a huge low-cost-growth-potential that will make it extremely attractive for film producing companies. The idea is simple: It is way more cheaper to collect the basic data from Internet for every movie ever made thank producing a single movie. Productions companies would only have to invest some money in harvesting the data and then apply the model (with some restructuring). Voilá: profit margins will rise.</p>
 			</div>
@@ -128,7 +130,11 @@
 					<p>
 						<ul>
 					<li>Python 3</li>
-					<li>Flask. Use <code>pip install Flask</code></li></ul></p>
+					<li>Flask. Use <code>pip install Flask</code></li>
+					<li>Unidecode. Use <code>pip install unidecode</code></li>
+					<li>WTforms. Use <code>pip install wtforms</code></li></ul></p>
+					<p>To run Reves' web app in local, you'll need to go to flaskapp directory and run in your command prompt "python revesapp.py". Then, open the route given in your browser (Chrome if possible).</p>
+
 					<h3>Reves' structure</h3>
 					<p>Reves development is divided in different Jupyter notebook for easier understanding.
 						<strong>Once in Reves, you will be able to navigate through the notebooks without having to reach this page</strong>, as we have prepared a link at the end of each notebook that will lead you to the following document.

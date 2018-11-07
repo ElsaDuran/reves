@@ -190,9 +190,15 @@
 					<header class="major"><h2>You also need to know</h2></header>
 				<div class="container">
 					<h3>How accurate is the result?</h3>
-					<p style="color: #373737">bla bla bla.</p>
+					<h3>What happens when data is not in Training?</h3>
+					<p style="color: #373737">There are millions of actors, directors, producers and almost any of the input features that Reves uses to calculate potential revenue.
+					Reves learns from the past, so if you have a rookie actor, or you are a new production company, your final result won't be very accurate since Reves has no data
+						from the past to learn from.
+					As Reves evolves, it will be trained with more and better data and the final result will be more reliable.
+						</br></br>For now, when you enter some "new data" into de model, we will apply a mean-based value so the lack of experience won't affect the final result,
+						not in a positive nor in a negative way. If you wish to learn more about Reves developing process, go to our <a href="specifications.html">Specifications section</a>.</p>
 					<h3>Why only this features?</h3>
-					<p style="color: #373737">This is what we could get so far.</p>
+					<p style="color: #373737">This is a basic model developed using The Movies Dataset, a public Project in Kaggle. Of course, the accuracy of our model is conditioned to the limited ammount of data we have in this public dataset and its reliability. </p>
 					</div>
 				</div>
 			</section>
@@ -202,7 +208,7 @@
 				</p><span class="copyright" style="color: #ffffff">
 			&copy; Copyright. All rights reserved. Design by <a href="http://www.html5webtemplates.co.uk" style="color: #ffffff">Responsive Web Templates</a>
 				</span></p>
-				<p><img src="images/reves_logo_mini_neg.jpg"</p>
+				<p><img src="{{ url_for('static',filename='images/reves_logo_mini_neg.jpg')}}"></p>
 			</footer>
 
 

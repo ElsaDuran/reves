@@ -60,17 +60,18 @@
 				<div class="container">
 
 					<!-- Content -->
-						<section id="content">
+						<section id="content">{%block content%}
                             <p>Be sure to type correctly the name of your collection. Reves won't work correctely if you misspell any names.
                             If the name is not on Reves' official list, Reves will apply a standard value based on mean so it won't affect the result, nor in a positive nor in a negative way.
                             </br>
-                                </br>Hint: Use <code>Ctrl+F</code> to find the name you are looking for.</p>
+								</br>This might take a while. There are {{c}} collections.
+                                </br></br>Hint: Use <code>Ctrl+F</code> to find the name you are looking for.</p>
                             <ul>
-                                {% for element in collections %}
+                                {% for element in b %}
                                 <li>{{element}}</li>
                                 {%endfor%}
                             </ul>
-
+						{%endblock%}
                         </section>
 
 

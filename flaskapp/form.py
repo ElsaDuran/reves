@@ -4,11 +4,11 @@ from wtforms import validators
 
 
 class CommentForm(Form):
-    name=TextField("Hi! I'm Reves. What's your movie's name?",
-                   [validators.length(min=1,max=200, message="Type something!")])
+    name=TextField("Hi! I'm Reves. What's your movie's name?*",
+                   [validators.length(min=1,max=200, message="Relax, I won't tell anyone. Type something.")])
     directors=TextField("Type directors' names separated by commas")
     screenplayers=TextField("Type screeenplayers' names separated by commas")
-    cast1name=TextField("1st Actor/Actress' Name")
+    cast1name=TextField("1st Actor/Actress' Name*")
     cast1gender=SelectField("Gender",
                             choices=[(0,"Select"),
                                      (1,"male"),
@@ -32,7 +32,8 @@ class CommentForm(Form):
                                      (1,"male"),
                                      (2,"female")],
                             coerce=int)
-    productionCompanies=TextField("Type Production Companies' names separated by commas")
+    productionCompanies=TextField("Type Production Companies' names separated by commas",
+                   [validators.length(min=1,max=200, message="At least one company, please.")])
     originalLanguage=SelectField("What is the movie's original language?",
                                  choices=[(0,"Select"),
                                           (1,"English"),
@@ -40,16 +41,19 @@ class CommentForm(Form):
                                  coerce=int)
     runtime=IntegerField("How much do you expect your movie to last? (minutes)")
     imax=SelectField("Are you launching an IMAX movie?",
+                        [validators.DataRequired(message="Please, select an option")],
                      choices=[(0,"Select"),
                               (1,"No"),
                               (2,"Yes")],
                      coerce=int)
-    d3=SelectField("Are you launching an 3D movie?",
+    d3=SelectField("Are you launching a 3D movie?",
+                   [validators.DataRequired(message="Please, select an option")],
                    choices=[(0,"Select"),
                             (1,"No"),
                             (2,"Yes")],
                    coerce=int)
     month=SelectField("When are you planning on releasing the movie? (month)",
+                        [validators.DataRequired(message="Please, select a month")],
                     choices=[(0,"Select"),
                              (1,"January"),
                              (2,"February"),
@@ -66,6 +70,7 @@ class CommentForm(Form):
                              coerce=int)
 
     weekday=SelectField("When are you planning on releasing the movie? (weekday)",
+                        [validators.DataRequired(message="Please, select a weekday")],
                       choices=[(0,"Select"),
                                (1,"Monday"),
                                (2,"Tuesday"),
@@ -78,6 +83,7 @@ class CommentForm(Form):
     keywords=TextAreaField("Type keywords separated by commas")
     collectionName=TextField("Type the collection's name")
     bellongsToCollection = SelectField("Does the movie belong to a collection?",
+                                       [validators.DataRequired(message="Please, select an option")],
                      choices=[(0, "Select"),
                               (1, "No"),
                               (2, "Yes")],
