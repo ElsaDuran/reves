@@ -1,1 +1,1 @@
-web: python revesapp.py
+web: gunicorn revesapp.py
