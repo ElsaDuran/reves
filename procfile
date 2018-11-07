@@ -1,1 +1,1 @@
-web: gunicorn revesapp:app
+web: gunicorn revesapp:app 
