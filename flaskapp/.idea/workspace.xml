@@ -1,126 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ac2f932-48ee-42c4-9db2-57563d9653c1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.ipynb_checkpoints/02.Data_Engineering-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../.ipynb_checkpoints/02.Data_Engineering-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01.Cleaning_Data.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../01.Cleaning_Data.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02.Data Engineering.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../02.Data Engineering.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02.Data_Engineering.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/../02.Data_Engineering.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/css/ie/PIE.htc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/css/ie/backgroundsize.min.htc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/css/ie/html5shiv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/css/ie/v8.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/css/ie/v9.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/css/images/overlay.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/css/skel.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/css/style-large.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/css/style-medium.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/css/style-small.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/css/style-xlarge.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/css/style-xsmall.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/elements.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/fonts/FontAwesome.otf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/fonts/HelveticaNeue-ExtBlackCond.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/fonts/HelveticaNeue-ExtBlackCondObl.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/fonts/HelveticaNeue-Extended.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/fonts/HelveticaNeue-ExtendedObl.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/fonts/HelveticaNeue-Heavy.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/fonts/HelveticaNeue-HeavyCond.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/fonts/HelveticaNeue-HeavyCondObl.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/fonts/HelveticaNeue-HeavyExt.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/fonts/HelveticaNeue-HeavyExtObl.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/fonts/HelveticaNeue-HeavyItalic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/fonts/HelveticaNeue-LightCondObl.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/fonts/HelveticaNeue-LightExt.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/fonts/HelveticaNeue-LightExtObl.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/fonts/HelveticaNeue-MediumCond.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/fonts/HelveticaNeue-MediumCondObl.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/fonts/HelveticaNeue-MediumExt.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/fonts/HelveticaNeue-MediumExtObl.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/fonts/HelveticaNeue-Roman.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/fonts/HelveticaNeue-Thin.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/fonts/HelveticaNeue-ThinCond.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/fonts/HelveticaNeue-ThinCondObl.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/fonts/HelveticaNeue-ThinExtObl.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/fonts/HelveticaNeue-ThinItalic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/fonts/HelveticaNeue-UltraLigCond.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/fonts/HelveticaNeue-UltraLigCondObl.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/fonts/HelveticaNeue-UltraLigExt.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/fonts/HelveticaNeueMedium.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/fonts/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/get-the-number.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/images/banner.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/images/pic01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/images/pic02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/images/pic03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/images/pic04.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/images/pic05.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/images/pic06.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/images/pic07.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/images/pic08.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/images/pic09.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/images/reves.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/images/reves_animation.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/images/reves_icon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/images/reves_icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/images/reves_logo_mini.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/images/reves_logo_mini_neg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/images/reves_logo_negative.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/images/reves_logo_negative.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/images/slide01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/images/slide02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/images/slide03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/js/init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/js/jquery.dropotron.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/js/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/js/jquery.scrollgress.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/js/jquery.scrolly.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/js/jquery.slidertron.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/js/skel-layers.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/js/skel.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/left-sidebar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/no-sidebar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/reason-why.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/right-sidebar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/sass/_mixins.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/sass/_vars.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/sass/ie/v8.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/sass/ie/v9.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/sass/style-large.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/sass/style-medium.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/sass/style-small.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/sass/style-xlarge.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/sass/style-xsmall.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/sass/style.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/screenplayers.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/show-me-the-money.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/specifications.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../docs/teacher-view.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs2/cast-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs2/cast-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs2/collections-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs2/collections-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs2/companies-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs2/companies-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs2/directors-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs2/directors-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs2/get-the-number.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs2/get-the-number.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs2/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs2/keywords-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs2/keywords-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs2/reason-why.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs2/reason-why.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs2/screenplayers-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs2/screenplayers-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs2/screenplayers.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs2/screenplayers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs2/show-me-the-money.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs2/show-me-the-money.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs2/specifications.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs2/specifications.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs2/teacher-view.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs2/teacher-view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form.py" beforeDir="false" afterPath="$PROJECT_DIR$/form.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/revesapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/revesapp.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../revesFunctions.py" beforeDir="false" afterPath="$PROJECT_DIR$/../revesFunctions.py" afterDir="false" />
-    </list>
+    <list default="true" id="1ac2f932-48ee-42c4-9db2-57563d9653c1" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +24,7 @@
           <entry key="css" value="2" />
           <entry key="html" value="39" />
           <entry key="js" value="8" />
-          <entry key="py" value="9" />
+          <entry key="py" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -151,7 +32,7 @@
           <entry key="CSS" value="2" />
           <entry key="HTML" value="39" />
           <entry key="JavaScript" value="8" />
-          <entry key="Python" value="9" />
+          <entry key="Python" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -174,6 +55,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/revesapp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1600">
+              <caret line="64" column="4" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+                <marker date="1541578537643" expanded="true" signature="4916:4917" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs2/teacher-view.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -183,10 +77,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs2/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
+            <state relative-caret-position="550">
               <caret line="22" column="59" lean-forward="true" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
             </state>
           </provider>
@@ -494,17 +388,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/revesapp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1525">
-          <caret line="64" column="4" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-            <marker date="1541578537643" expanded="true" signature="4916:4917" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/form.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
@@ -601,8 +484,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docs2/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
+        <state relative-caret-position="550">
           <caret line="22" column="59" lean-forward="true" selection-start-line="22" selection-start-column="59" selection-end-line="22" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/revesapp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1600">
+          <caret line="64" column="4" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <marker date="1541578537643" expanded="true" signature="4916:4917" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
