@@ -155,4 +155,4 @@ def companiesindex():
     return render_template("companies-index.html",companies=companies,b=b,c=c)
 
 if __name__ == '__main__':
-    app.run(debug=True,port=5000)
+    app.run(debug=True)
