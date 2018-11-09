@@ -1,1 +1,1 @@
-web: gunicorn revesapp.py:app --log-file -
+web: gunicorn revesapp.py --log-file -
