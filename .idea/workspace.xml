@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1ac2f932-48ee-42c4-9db2-57563d9653c1" name="Default Changelist" comment="" />
+    <list default="true" id="1ac2f932-48ee-42c4-9db2-57563d9653c1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,17 +58,20 @@
     <session id="1374426055">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="html" value="14" />
           <entry key="py" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="HTML" value="14" />
           <entry key="Python" value="1" />
         </counts>
       </usages-collector>
@@ -100,8 +105,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+            <state relative-caret-position="538">
+              <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="32" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -156,7 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/docs/index.html" />
         <option value="$PROJECT_DIR$/docs2/form.py" />
         <option value="$PROJECT_DIR$/docs2/_macro.py" />
         <option value="$PROJECT_DIR$/docs2/screenplayersindex.html" />
@@ -179,6 +183,7 @@
         <option value="$PROJECT_DIR$/docs2/screenplayers.html" />
         <option value="$PROJECT_DIR$/docs2/index.html" />
         <option value="$PROJECT_DIR$/revesapp.py" />
+        <option value="$PROJECT_DIR$/docs/index.html" />
       </list>
     </option>
   </component>
@@ -249,8 +254,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14653465" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -469,8 +473,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+        <state relative-caret-position="538">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="32" selection-end-column="69" />
         </state>
       </provider>
     </entry>
