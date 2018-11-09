@@ -17,11 +17,11 @@ def index2():
 @app.route("/get-the-number.html",methods=["POST","GET"])
 def get_the_number():
     comment_form=form.CommentForm(request.form)
-    moviename = "Your movie's"
-    directors = []
+    moviename="Your movie's"
+    directors=[]
     screenplayers=[]
-    cast_names = []
-    cast_genders = []
+    cast_names=[]
+    cast_genders =[]
     collection=0
     collection_name=""
     language=0
@@ -41,22 +41,28 @@ def get_the_number():
        #loading data from comment form
 
         moviename=(comment_form.name.data)+"'s"
-        directors = comment_form.directors
-        screenplayers=comment_form.screenplayers
-        cast_names = cast_names.append(
-            [comment_form.cast1name, comment_form.cast2name, comment_form.cast3name, comment_form.cast4name])
-        cast_genders = cast_names.append(
-            [comment_form.cast1gender, comment_form.cast2gender, comment_form.cast3gender, comment_form.cast4gender])
-        collection=comment_form.bellongsToCollection
-        collection_name=comment_form.collectionName
-        language=comment_form.originalLanguage
-        production_companies=comment_form.productionCompanies
+        directors=comment_form.screenplayers.data
+        screenplayers=comment_form.screenplayers.data
+        name1=comment_form.cast1name.data
+        name2=comment_form.cast2name.data
+        name3=comment_form.cast3name.data
+        name4=comment_form.cast4name.data
+        gender1=comment_form.cast1gender.data
+        gender2=comment_form.cast2gender.data
+        gender3=comment_form.cast3gender.data
+        gender4=comment_form.cast4gender.data
+        cast_names.append([name1,name2,name3,name4])
+        cast_genders.append([gender1,gender2,gender3,gender4])
+        collection=comment_form.bellongsToCollection.data
+        collection_name=comment_form.collectionName.data
+        language=comment_form.originalLanguage.data
+        production_companies=comment_form.productionCompanies.data
         runtime = comment_form.runtime.data
-        month=comment_form.month
-        weekday=comment_form.weekday
-        imax=comment_form.imax
-        d3=comment_form.d3
-        keywords=comment_form.keywords
+        month=comment_form.month.data
+        weekday=comment_form.weekday.data
+        imax=comment_form.imax.data
+        d3=comment_form.d3.data
+        keywords=comment_form.keywords.data
 
        #data transformation
 

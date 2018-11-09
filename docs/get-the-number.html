@@ -158,14 +158,37 @@
 				</form>
 			</div>
         </section>
-		<!-- Are you a producer -->
+		<!-- Final numbers -->
 		<section id="cta" class="wrapper style2" style="background-color:#373737">
 			<p style="font-size:40px;color:#ffffff;margin-top:30px"> {{moviename}} revenue will be ${{revenue}}</p>
     		<p style="color:#ffffff">Not enough? Try again! Change some parameters.</p>
-        {%endblock%}
+
 		</section>
 
-				
+		<!-- Debuggin mode -->
+
+		<section id="content" class="wrapper style1">
+			<div class="container">
+			<h3>Debuggin. Check return values</h3>
+			<p><ul><li>Moviename: {{moviename}}</li>
+				</br><li>Directores: {{directors}}</li>
+				</br><li>Guionistas: {{screenplayers}}</li>
+				</br><li>Actores: {{cast_names}}</li>
+				</br><li>Generos: {{cast_genders}}</li>
+				</br><li>Belongs to collection: {{collection}}</li>
+				</br><li>Collections' name: {{collection_name}}</li>
+				</br><li>Language: {{language}}</li>
+				</br><li>Companies: {{production_companies}}</li>
+				</br><li>Runtime: {{runtime}}</li>
+				</br><li>Imax: {{imax}}</li>
+				</br><li>3d: {{d3}}</li>
+				</br><li>Mes: {{month}}</li>
+				</br><li>Dia de la semana: {{weekday}}</li>
+				</br><li>Keywords: {{keywords}}</li>
+			</br><li>Revenue: {{revenue}}</li></></p>
+        {%endblock%}
+			</div></section>
+
 		<!-- Footer -->
 		<footer id="footer" <span style="background-color: #00b050" </span>
 		</p><span class="copyright" style="color: #ffffff">
