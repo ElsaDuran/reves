@@ -4,7 +4,7 @@ from flask import request
 import form
 
 
-app=Flask(__name__,template_folder="docs2",static_folder="static")
+app=Flask(__name__,template_folder="docs",static_folder="static")
 
 @app.route("/")
 def index():
@@ -105,7 +105,7 @@ def specifications():
 @app.route("/directors-index.html")
 def directors():
     import pandas as pd
-    directors=pd.read_pickle("./docs2/dicts/directors_dict.pickle")
+    directors=pd.read_pickle("./docs/dicts/directors_dict.pickle")
     b=sorted(list(directors.keys()))
     c=len(b)
     return render_template("directors-index.html",directors=directors,b=b,c=c)
@@ -113,7 +113,7 @@ def directors():
 @app.route("/screenplayers-index.html")
 def screenplayersindex():
     import pandas as pd
-    screenplayers=pd.read_pickle("./docs2/dicts/screenplayers_dict.pickle")
+    screenplayers=pd.read_pickle("./docs/dicts/screenplayers_dict.pickle")
     b=sorted(list(screenplayers.keys()))
     c=len(b)
     return render_template("screenplayers-index.html",screenplayers=screenplayers,b=b,c=c)
@@ -125,7 +125,7 @@ def teacher():
 @app.route("/collections-index.html")
 def collectionsindex():
     import pandas as pd
-    collections =pd.read_pickle("./docs2/dicts/collection.pickle")
+    collections =pd.read_pickle("./docs/dicts/collection.pickle")
     b=sorted(list(collections.keys()))
     c=len(b)
     return render_template("collections-index.html",collections=collections,b=b,c=c)
@@ -133,7 +133,7 @@ def collectionsindex():
 @app.route("/cast-index.html")
 def castindex():
     import pandas as pd
-    cast=pd.read_pickle("./docs2/dicts/cast_dict.pickle")
+    cast=pd.read_pickle("./docs/dicts/cast_dict.pickle")
     b=sorted(list(cast.keys()))
     c=len(b)
     return render_template("cast-index.html",cast=cast,b=b,c=c)
@@ -141,7 +141,7 @@ def castindex():
 @app.route("/keywords-index.html")
 def keywordsindex():
     import pandas as pd
-    keywords=pd.read_pickle("./docs2/dicts/keywords_dict.pickle")
+    keywords=pd.read_pickle("./docs/dicts/keywords_dict.pickle")
     b=sorted(list(keywords.keys()))
     c = len(b)
     return render_template("keywords-index.html",keywords=keywords,b=b,c=c)
@@ -149,7 +149,7 @@ def keywordsindex():
 @app.route("/companies-index.html")
 def companiesindex():
     import pandas as pd
-    companies=pd.read_pickle("./docs2/dicts/production_company_dict.pickle")
+    companies=pd.read_pickle("./docs/dicts/production_company_dict.pickle")
     b=sorted(list(companies.keys()))
     c=len(b)
     return render_template("companies-index.html",companies=companies,b=b,c=c)
