@@ -11,6 +11,7 @@
 
   				gtag('config', 'UA-128049794-1');
 			</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content=""/>
@@ -57,12 +58,24 @@
         {% block content %}
 		<section>
 			{% from "_macro.html" import render_field %}
+			{% from "_macro.html" import render_fields %}
 			<div class="container">
 			    <section id="main" class="wrapper style1">
 				    <header class="major">
 					    <h2>Get the number</h2>
 				    </header>
-                </section>
+				</section>
+			</div>
+		</section>
+
+		<!-- Final numbers -->
+		<section id="cta" class="wrapper style2" style="background-color:#373737;margin-bottom:90px">
+			<p style="font-size:40px;color:#ffffff;margin-top:30px"> {{moviename}} revenue will be ${{revenue}}</p>
+    		<p style="color:#ffffff">Not enough? Try again! Change some parameters.</p>
+
+		</section>
+		<section>
+                <div class="container">
                 <form method="POST" action="" >
 					<h3>Let's introduce ourselves</h3>
 					<div class="row uniform">
@@ -77,36 +90,18 @@
 							<a href="directors-index.html" target="_blank" style="font-size:15px"><span style="margin-left: 20px;margin-top:20px" class="fab fa-exclamation-circle fa-1x"></span>  Check the spelling. Directors' Index</a>
 						</div>
 						<div class="12u">
-							{{render_field(form.screenplayers)}}
-							<a href="screenplayers-index.html" target="_blank" style="font-size:15px"><span style="margin-left: 20px;margin-top:20px" class="fab fa-exclamation-circle fa-x"></span>  Check the spelling. Screenplayers' Index</a>
+							{{render_field(form.scriptwriters)}}
+							<a href="scriptwriters-index.html" target="_blank" style="font-size:15px"><span style="margin-left: 20px;margin-top:20px" class="fab fa-exclamation-circle fa-x"></span>  Check the spelling. Scriptwriters' Index</a>
 						</div>
 						<div class="12u">
 							<p style="margin-top:5px">Now, Reves needs to know the names and genders of the main 4 actors/actresses in your movie. Make sure you type names correctely.</p>
 							<a href="cast-index.html" target="_blank" style="font-size:15px"><span style="margin-left: 20px;margin-top:-10px" class="fab fa-exclamation-circle fa-x"></span>  Check the spelling. Cast' Index</a>
 						</div>
 						<div class="6u 12u(3);select-wrapper">
-							{{render_field(form.cast1name)}}
+							{{render_field(form.castnames)}}
 						</div>
 						<div class="6u 12u(3);select-wrapper">
 								{{render_field(form.cast1gender)}}
-						</div>
-						<div class="6u 12u(3);select-wrapper">
-								{{render_field(form.cast2name)}}
-						</div>
-						<div class="6u 12u(3);select-wrapper">
-								{{render_field(form.cast2gender)}}
-						</div>
-						<div class="6u 12u(3);select-wrapper">
-								{{render_field(form.cast3name)}}
-						</div>
-						<div class="6u 12u(3);select-wrapper">
-								{{render_field(form.cast3gender)}}
-						</div>
-						<div class="6u 12u(3);select-wrapper">
-								{{render_field(form.cast4name)}}
-						</div>
-						<div class="6u 12u(3);select-wrapper">
-								{{render_field(form.cast4gender)}}
 						</div>
 					</div>
 					<h3 style="margin-top:50px">Movie plot</h3>
@@ -117,6 +112,9 @@
 						<div class="6u 12u(3);select-wrapper">
 							{{render_field(form.collectionName)}}
 							<a href="collections-index.html" target="_blank" style="font-size:15px"><span style="margin-left: 20px;margin-top:20px" class="fab fa-exclamation-circle fa-1x"></span> Check the spelling. Collections' Index</a>
+						</div>
+						<div class="12u">
+							{{render_field(form.genres)}}
 						</div>
 					</div>
 					<h3 style="margin-top:50px">Production features</h3>
@@ -158,12 +156,7 @@
 				</form>
 			</div>
         </section>
-		<!-- Final numbers -->
-		<section id="cta" class="wrapper style2" style="background-color:#373737">
-			<p style="font-size:40px;color:#ffffff;margin-top:30px"> {{moviename}} revenue will be ${{revenue}}</p>
-    		<p style="color:#ffffff">Not enough? Try again! Change some parameters.</p>
 
-		</section>
 
 		<!-- Debuggin mode -->
 
@@ -172,7 +165,7 @@
 			<h3>Debuggin. Check return values</h3>
 			<p><ul><li>Moviename: {{moviename}}</li>
 				</br><li>Directores: {{directors}}</li>
-				</br><li>Guionistas: {{screenplayers}}</li>
+				</br><li>Guionistas: {{scriptwriters}}</li>
 				</br><li>Actores: {{cast_names}}</li>
 				</br><li>Generos: {{cast_genders}}</li>
 				</br><li>Belongs to collection: {{collection}}</li>

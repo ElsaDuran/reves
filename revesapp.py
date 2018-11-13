@@ -10,6 +10,10 @@ app=Flask(__name__,template_folder="docs",static_folder="static")
 def index():
     return render_template("index.html")
 
+@app.route("/elements.html")
+def elements():
+    return render_template("elements.html")
+
 @app.route("/index.html")
 def index2():
     return render_template("index.html")
@@ -19,7 +23,8 @@ def get_the_number():
     comment_form=form.CommentForm(request.form)
     moviename="Your movie's"
     directors=[]
-    screenplayers=[]
+    scriptwriters=[]
+    genres=[]
     cast_names=[]
     cast_genders =[]
     collection=0
@@ -34,35 +39,54 @@ def get_the_number():
     keywords=[]
     revenue=0
 
-    if request.method=="POST" and comment_form.validate():
+    import numpy as np
+    import pandas as pd
+    import pickle
+    import revesFunctions as rf
 
-       #importing data and libraries
+    with open("transformation/collection_dict.pickle", "rb") as handle:
+        collection_dict = pickle.load(handle)
+    with open("transformation/genres_dict.pickle", "rb") as handle:
+        genres_dict = pickle.load(handle)
+    with open("transformation/language_dict.pickle", "rb") as handle:
+        language_dict = pickle.load(handle)
+    with open("transformation/production_company_dict.pickle", "rb") as handle:
+        production_company_dict = pickle.load(handle)
+    with open("transformation/cast_dict.pickle", "rb") as handle:
+        cast_dict = pickle.load(handle)
+    with open("transformation/cast_gender_dict.pickle", "rb") as handle:
+        cast_gender_dict = pickle.load(handle)
+    with open("transformation/directors_dict.pickle", "rb") as handle:
+        directors_dict = pickle.load(handle)
+    with open("transformation/writers_dict.pickle", "rb") as handle:
+        writers_dict = pickle.load(handle)
+    with open("transformation/keywords_dict.pickle", "rb") as handle:
+        keywords_dict = pickle.load(handle)
+    with open("transformation/month_dict.pickle", "rb") as handle:
+        month_dict = pickle.load(handle)
+    with open("transformation/weekday_dict.pickle", "rb") as handle:
+        weekday_dict = pickle.load(handle)
+
+    if request.method=="POST" and comment_form.validate():
 
        #loading data from comment form
 
         moviename=(comment_form.name.data)+"'s"
-        directors=comment_form.screenplayers.data
-        screenplayers=comment_form.screenplayers.data
-        name1=comment_form.cast1name.data
-        name2=comment_form.cast2name.data
-        name3=comment_form.cast3name.data
-        name4=comment_form.cast4name.data
-        gender1=comment_form.cast1gender.data
-        gender2=comment_form.cast2gender.data
-        gender3=comment_form.cast3gender.data
-        gender4=comment_form.cast4gender.data
-        cast_names.append([name1,name2,name3,name4])
-        cast_genders.append([gender1,gender2,gender3,gender4])
+        directors=str.split(comment_form.directors.data,",")
+        scriptwriters=str.split(comment_form.scriptwriters.data,",")
+        genres=comment_form.genres.data
+        cast_names=str.split(comment_form.castnames.data,",")
+        cast_genders=comment_form.cast1gender.data
         collection=comment_form.bellongsToCollection.data
         collection_name=comment_form.collectionName.data
         language=comment_form.originalLanguage.data
-        production_companies=comment_form.productionCompanies.data
-        runtime = comment_form.runtime.data
+        production_companies=str.split(comment_form.productionCompanies.data,",")
+        runtime = (comment_form.runtime.data)
         month=comment_form.month.data
         weekday=comment_form.weekday.data
         imax=comment_form.imax.data
         d3=comment_form.d3.data
-        keywords=comment_form.keywords.data
+        keywords=str.split(comment_form.keywords.data,",")
 
        #data transformation
 
@@ -77,7 +101,8 @@ def get_the_number():
                            form=comment_form,
                            moviename=moviename,
                            directors=directors,
-                           screenplayers=screenplayers,
+                           genres=genres,
+                           scriptwriters=scriptwriters,
                            cast_names=cast_names,
                            cast_genders=cast_genders,
                            collection=collection,
@@ -116,13 +141,13 @@ def directors():
     c=len(b)
     return render_template("directors-index.html",directors=directors,b=b,c=c)
 
-@app.route("/screenplayers-index.html")
-def screenplayersindex():
+@app.route("/scriptwriters-index.html")
+def scriptwritersindex():
     import pandas as pd
-    screenplayers=pd.read_pickle("./docs/dicts/screenplayers_dict.pickle")
-    b=sorted(list(screenplayers.keys()))
+    scriptwriters=pd.read_pickle("./docs/dicts/writers_dict.pickle")
+    b=sorted(list(scriptwriters.keys()))
     c=len(b)
-    return render_template("screenplayers-index.html",screenplayers=screenplayers,b=b,c=c)
+    return render_template("scriptwriters-index.html",scriptwriters=scriptwriters,b=b,c=c)
 
 @app.route("/teacher-view.html")
 def teacher():

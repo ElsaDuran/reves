@@ -94,11 +94,11 @@
 						<p>During the developing of Reves, we have had to face the different challenges that have been raised as such from the teachers during this course: exhaustive data cleaning,choosing relevant variables, identifying and applying the most convenient ML model, visualizing the data, and, as a bonus track, applying a Deep Learning neural network in order to experience this technology and to try to better the accuracy, despite the loss of information about how the model actually works.</p>
 					<h3>Which technologies have we used?</h3>
 						<p><ul>
-					<li>Python: for data cleaning, engineering and modelling.</li>
+					<li>Python for data cleaning, engineering and modelling.</li>
 					<li>Tableau for data exploration.</li>
 					<li>HTML & CSS for web front-end.</li>
-					<li>Flask for web app back-end.</li>
-					<li>Heroku for web app hosting and publishing.</li>
+					<li>Flask and Python for webapp back-end.</li>
+					<li>Heroku for webapp hosting and publishing.</li>
 				</ul></p>
 
 					<h3>Why would it relevant for the industry?</h3>
@@ -127,17 +127,18 @@
 					</ul>
 					</p>
 					<h3>What do you need to run the project?</h3>
-					<p>
+					<p>You don't need anything to run and <a href="get-the-number.html">use Reves' app from its website</a>, but if you want to download and run Reves on your computer, you will need:
 						<ul>
 					<li>Python 3</li>
 					<li>Flask. Use <code>pip install Flask</code></li>
 					<li>Unidecode. Use <code>pip install unidecode</code></li>
 					<li>WTforms. Use <code>pip install wtforms</code></li></ul></p>
-					<p>To run Reves' web app in local, you'll need to go to flaskapp directory and run in your command prompt "python revesapp.py". Then, open the route given in your browser (Chrome if possible).</p>
+					<p>To run Reves' web app in local, you'll need to go to the app's directory and run in your command prompt "python revesapp.py". Then, open the route given in your browser (Chrome if possible). If you just open .html files, CSS styles won't be displayed and apps' functionality won't be available.</br>
+					If you run Reves from the Internet, the first time you access the web it might take a wile to load the page, since we are using a Heroku's free account and dynos sleep after 30 minutes of inactivity. Please, be patient.</p>
 
 					<h3>Reves' structure</h3>
 					<p>Reves development is divided in different Jupyter notebook for easier understanding.
-						<strong>Once in Reves, you will be able to navigate through the notebooks without having to reach this page</strong>, as we have prepared a link at the end of each notebook that will lead you to the following document.
+						<strong>Once in Reves notebooks, you will be able to navigate through the notebooks without having to reach this page</strong>, as we have prepared a link at the end of each notebook that will lead you to the following document.
 						</br>To share data between notebooks we have used Pandas' method <code>pd.to_pickle</code> to avoid transforming lists in strings as method <code>pd.to_csv</code> does.
 						</br><strong>So if you wish to review the full project, start with Cleaning Data.</strong> In case you'd like to review a specific part of the project, just go directly to it.</p>
 					<div class="row">
@@ -207,7 +208,7 @@
 				</p><span class="copyright" style="color: #ffffff">
 			&copy; Copyright. All rights reserved. Design by <a href="http://www.html5webtemplates.co.uk" style="color: #ffffff">Responsive Web Templates</a>
 				</span></p>
-				<p><img src="images/reves_logo_mini_neg.jpg"</p>
+				<p><img src="{{ url_for('static',filename='images/reves_logo_mini_neg.jpg')}}"></p>
 			</footer>
 
 
