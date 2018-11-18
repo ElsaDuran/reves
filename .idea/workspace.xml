@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1ac2f932-48ee-42c4-9db2-57563d9653c1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/04.Reves_Function-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/04.Reves_Function-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01.Cleaning_Data.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/01.Cleaning_Data.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02.Data_Engineering.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/02.Data_Engineering.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03.Model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/03.Model.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/04.Reves_Function.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/04.Reves_Function.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/cast-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/cast-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/collections-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/collections-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/companies-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/companies-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/directors-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/directors-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/elements.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/get-the-number.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/get-the-number.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/keywords-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/keywords-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/left-sidebar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/no-sidebar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/reason-why.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/reason-why.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/right-sidebar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/screenplayers.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/scriptwriters-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/scriptwriters-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/show-me-the-money.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/specifications.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/teacher-view.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/teacher-view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/form.py" beforeDir="false" afterPath="$PROJECT_DIR$/form.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/revesapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/revesapp.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -125,11 +100,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/revesapp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="377" column="31" lean-forward="true" selection-start-line="377" selection-start-column="31" selection-end-line="377" selection-end-column="31" />
+            <state relative-caret-position="75">
+              <caret line="209" column="17" lean-forward="true" selection-start-line="209" selection-start-column="17" selection-end-line="209" selection-end-column="17" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
                 <marker date="1542555462957" expanded="true" signature="14019:14020" ph="..." />
@@ -138,7 +113,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/how-to-use-reves.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="287">
@@ -590,21 +565,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/revesapp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="377" column="31" lean-forward="true" selection-start-line="377" selection-start-column="31" selection-end-line="377" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-            <marker date="1542555462957" expanded="true" signature="14019:14020" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/how-to-use-reves.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
           <caret line="88" lean-forward="true" selection-start-line="88" selection-end-line="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/revesapp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="209" column="17" lean-forward="true" selection-start-line="209" selection-start-column="17" selection-end-line="209" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <marker date="1542555462957" expanded="true" signature="14019:14020" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
