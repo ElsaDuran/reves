@@ -11,7 +11,7 @@
 
   				gtag('config', 'UA-128049794-1');
 			</script>
-		<title>Reves. Teachers View</title>
+		<title>How to use Reves</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -29,9 +29,8 @@
 		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style-xlarge.css')}}">
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-		<script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
 	</head>
-	<body class="landing">
+	<body>
 
 		<!-- Header -->
 			<header id="header" class="skel-layers-fixed">
@@ -59,68 +58,47 @@
 				</nav>
 			</header>
 
-		<!-- Banner -->
-			<section id="banner">
-				<div class="inner">
-					<img src="{{ url_for('static',filename='images/reves_logo_negative.png')}}">
-					<h2>Predicting movie revenue from basic movie features.</h2>
-					<p style="color: #ffffff">Developed by Carlos Ferrer-Bonsoms & Elsa Durán</p>
-					<p style="color: #ffffff;font-weight:bold;font-size:40px">Teacher's view  <span style="height:35px;margin-bottom:5px" class="fas fa-apple-alt"></span></p>
-				</div>
-			</section>
-
-		<!-- Welcome message -->
-			<section id="one" class="wrapper style1">
+		<!-- Main -->
+			<section id="main" class="wrapper style1">
+				<header class="major">
+					<h2>How to use Reves</h2>
+				</header>
 				<div class="container">
-					<header class="major">
-						<h2>Hi [Isra,Dani]. Welcome to Reves!</h2>
-						<p style="color: #373737;font-size:20px">You have reached Reves' site for teachers. This is just an private and extended view of Reves' official website, specially developed for you, to make it easier for you to understand and grade the project. We will guide you through the material, step by step, so you can reproduce the project from start to end. </p>
-						<p style="color: #373737;font-size:20px">Reves' official website has been created for sharing our project with other users or potential clients, and that is why it's commercial-focused. It also includes a web app to use Reves. Please, take a look at it after reviewing our project.</p>
-						<p style="color: #373737;font-size:20px">Thanks in advanced for all that you've teached us. We hope you enjoy our work as much as we do.</p>
-					</header>
-					</div>
-				<div class="container" style="margin-bottom: 0px">
+						
+					<!-- Intro -->
+						<section id="content">
+							<p>Reves is a interactive web app where a production company can enter the main features of the movie they are about to produce and instantly know the potential revenue of the movie.
+							As it is an interactive tool, you can play with: change the values, sumbit them and find the perfect featuring for your movie.</p>
+							<h3>Where does data come from?</h3>
+								<p>This is a basic model developed using The Movies Dataset, a public project in Kaggle. Of course, the accuracy of our model is conditioned to the limited ammount of data we have in this public dataset.</p>
+								<p>You can check the Kaggle website <a href="https://www.kaggle.com/rounakbanik/the-movies-dataset/kernels">here.</a></a></p>
+							<h3>How accurate is the result?</h3>
+							<h3>What happens when data is not in Training?</h3>
+								<p style="color: #373737">There are millions of actors, directors, producers and almost any of the input features that Reves uses to calculate potential revenue.
+								Reves learns from the past, so if you have a rookie actor, or you are a new production company, your final result won't be very accurate since Reves has no data
+								from the past to learn from.
+								As Reves evolves, it will be trained with more and better data and the final result will be more reliable.
+								</br></br>For now, when you enter some "new data" into de model, we will apply a mean-based value so the lack of experience won't affect the final result,
+								not in a positive nor in a negative way. If you wish to learn more about Reves developing process, go to our <a href="specifications.html">Specifications section</a>.</p>
+							<h3>Why only this features?</h3>
+								<p style="color: #373737">This is a basic model developed using The Movies Dataset, a public Project in Kaggle. Of course, the accuracy of our model is conditioned to the limited ammount of data we have in this public dataset and its reliability. </p>
+
+						</section>
 				</div>
 			</section>
 
-		<!- CTA1 -->
-			<section id="cta" class="wrapper style1" style="background-color:#373737">
-				<h2 style="color:#ffffff">Reves' project memo</h2>
-				</section>
-
-		<section id="main" class="wrapper style1">
-			<div class="container">
-				<section id="content">
-					<h3>What exactly is Reves?</h3>
-						<p>Reves is a Machine Learning project based on predicting movie revenue from the basic features of a movie, as genre, cast, crew, release date, budget, etc. It is a business tool mainly aimed for film producers, who want to know how much money the movie is going to make before even producing it.</p>
-					<h3>Where does data come from?</h3>
-						<p>This is a basic model developed using The Movies Dataset, a public project in Kaggle. Of course, the accuracy of our model is conditioned to the limited ammount of data we have in this public dataset.</p>
-						<p>You can check the Kaggle website <a href="https://www.kaggle.com/rounakbanik/the-movies-dataset/kernels">here.</a></a></p>
-					<h3>Why did we decide to develope this specific project?</h3>
-						<p>We wanted to create a project that would actually make sense in real life. We didn’t want to spend hours of work just for a research project to store in a drawer. The movie topic was chosen just because we liked it, and the idea of making a data-based business tool came to us analyzing the data we had, and thinking how could we make money out of it.</p>
-					<h3>Why is it relevant as a Final Project?</h3>
-						<p>During the developing of Reves, we have had to face the different challenges that have been raised as such from the teachers during this course: exhaustive data cleaning,choosing relevant variables, identifying and applying the most convenient ML model, visualizing the data, and, as a bonus track, applying a Deep Learning neural network in order to experience this technology and to try to better the accuracy, despite the loss of information about how the model actually works.</p>
-					<h3>Which technologies have we used?</h3>
-						<p><ul>
-					<li>Python for data cleaning, engineering and modelling.</li>
-					<li>Tableau for data exploration.</li>
-					<li>HTML & CSS for web front-end.</li>
-					<li>Flask and Python for webapp back-end.</li>
-					<li>Heroku for webapp hosting and publishing.</li>
-				</ul></p>
-
-					<h3>Why would it relevant for the industry?</h3>
-						<p>Although the accuracy of our model is conditioned to the limited ammount of data we have in this public dataset, Reves hasn’t work its magic yet. It has a huge low-cost-growth-potential that will make it extremely attractive for film producing companies. The idea is simple: It is way more cheaper to collect the basic data from Internet for every movie ever made thank producing a single movie. Productions companies would only have to invest some money in harvesting the data and then apply the model (with some restructuring). Voilá: profit margins will rise.</p>
-			</div>
-		</section>
-
-				</div>
+				<!-- CTA -->
+			<section id="cta" class="wrapper style3">
+					<h2>Got how it works?</h2>
+					<ul class="actions">
+					<li><a href="get-the-number.html" class="button big">Get the number</a></li>
+					</ul>
 			</section>
 
-		<!- CTA2 -->
+				<!- CTA2 -->
 			<section id="cta" class="wrapper style1" style="background-color:#373737">
-				<h2 style="color:#ffffff">Let's get started</h2>
-				</section>
+				<h2 style="color:#ffffff">Run Reves on your computer</h2>
+			</section>
 
 				<section id="main" class="wrapper style1">
 			<div class="container">
@@ -221,6 +199,7 @@
 		</footer>
 
 
+
 	<script type="text/javascript" src="{{url_for('static',filename='js/init.js')}}"></script>
 	<script type="text/javascript" src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
 	<script type="text/javascript" src="{{url_for('static',filename='js/jquery.dropotron.min.js')}}"></script>
@@ -230,6 +209,7 @@
 	<script type="text/javascript" src="{{url_for('static',filename='js/skel.min.js')}}"></script>
 	<script type="text/javascript" src="{{url_for('static',filename='js/skel-layers.min.js')}}"></script>
 	<script type="text/javascript" src="{{url_for('static',filename='js/init.js')}}"></script>
+
 
 	</body>
 </html>

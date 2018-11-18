@@ -11,6 +11,7 @@
 
   				gtag('config', 'UA-128049794-1');
 			</script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content=""/>
@@ -23,14 +24,14 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
-		<script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
+				<script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
 		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/skel.css')}}">
 		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css')}}">
 		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style-xlarge.css')}}">
 
 		<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/ie/v9.css')}}"><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/ie/v.css')}}"><![endif]-->
-		<title>Production Companies' Index</title>
+		<title>Get the number</title>
 	</head>
 	<body>
 
@@ -60,36 +61,50 @@
 				</nav>
 			</header>
 
-        <section id="main" class="wrapper style1">
-				<header class="major">
-					<h2>Production Companies' Index</h2>
-				</header>
-				<div class="container">
+		<!-- Form -->
+        {% block content %}
+		<section>
+			{% from "_macro.html" import render_field %}
+			<div class="container">
+			    <section id="main" class="wrapper style1">
+				    <header class="major">
+					    <h2>{{title}} revenue will be</h2>
+				    </header>
+				</section>
+			</div>
+		</section>
 
-					<!-- Content -->
-						<section id="content">{%block content%}
-                            <p>Be sure to type correctly the name of your production companies. Reves won't work correctely if you misspell any names.
-                            If the name is not on Reves' official list, Reves will apply a standard value based on mean so it won't affect the result, nor in a positive nor in a negative way.
-                            </br>
-							</br>This might take a while. There are {{c}} companies.
-							</br></br>Hint: Use <code>Ctrl+F</code> to find the name you are looking for.</p>
-                            <ul>
-                                {% for element in b %}
-                                <li>{{element}}</li>
-                                {%endfor%}
-                            </ul>
-						{%endblock%}
-                        </section>
+		<!-- Final numbers -->
+		<section id="cta" class="wrapper style2" style="background-color:#373737;margin-bottom:90px">
+			<p style="font-size:60px;color:#ffffff;margin-top:30px">  ${{revenue}}</p>
+    		<p style="color:#ffffff;font-size:20px">Not enough? <a href="get-the-number.html"> Try again! </a> Change some parameters.</p>
 
+		</section>
 
+		<!-- Debuggin mode -->
 
-
-				</div>
-			</section>
-
+		<section id="content" class="wrapper style1">
+			<div class="container">
+			<h3>Data summary</h3>
+			<p><ul><li>Title: {{title}}</li>
+				</br><li>Directors: {{directors}}</li>
+				</br><li>Scriptwriters: {{scriptwriters}}</li>
+				</br><li>Cast Names: {{cast_names}}</li>
+				</br><li>Main character gender: {{main_actor_genre}}</li>
+				</br><li>Collections' Name: {{collection_name}}</li>
+				</br><li>Genres: {{genres}}</li>
+				</br><li>Original Language: {{language}}</li>
+				</br><li>Production Companies: {{production_companies}}</li>
+				</br><li>Runtime (min): {{runtime}}</li>
+				</br><li>Release Month: {{month}}</li>
+				</br><li>Release Weekday: {{weekday}}</li>
+				</br><li>Keywords: {{keywords}}</li>
+				</br><li>Revenue: ${{revenue}}</li></ul></p>
+        {%endblock%}
+			</div></section>
 
 		<!-- Footer -->
-			<footer id="footer" <span style="background-color: #00b050" </span>
+		<footer id="footer" <span style="background-color: #00b050" </span>
 		</p><span class="copyright" style="color: #ffffff">
 			&copy; Copyright. All rights reserved.</a>
 			</span></p>

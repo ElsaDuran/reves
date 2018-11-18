@@ -11,9 +11,10 @@
 
   				gtag('config', 'UA-128049794-1');
 			</script>
+		<title>Scriptwriters</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
-		<meta name="keywords" content=""/>
+		<meta name="keywords" content="" />
 		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
 		<script src="js/jquery.min.js"></script>
 		<script src="js/jquery.dropotron.min.js"></script>
@@ -27,10 +28,8 @@
 		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/skel.css')}}">
 		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css')}}">
 		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style-xlarge.css')}}">
-
-		<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/ie/v9.css')}}"><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/ie/v.css')}}"><![endif]-->
-		<title>Production Companies' Index</title>
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 	</head>
 	<body>
 
@@ -60,34 +59,32 @@
 				</nav>
 			</header>
 
-        <section id="main" class="wrapper style1">
+		<!-- Main -->
+			<section id="main" class="wrapper style1">
 				<header class="major">
-					<h2>Production Companies' Index</h2>
+					<h2>Scriptwriters</h2>
 				</header>
 				<div class="container">
 
 					<!-- Content -->
-						<section id="content">{%block content%}
-                            <p>Be sure to type correctly the name of your production companies. Reves won't work correctely if you misspell any names.
-                            If the name is not on Reves' official list, Reves will apply a standard value based on mean so it won't affect the result, nor in a positive nor in a negative way.
-                            </br>
-							</br>This might take a while. There are {{c}} companies.
-							</br></br>Hint: Use <code>Ctrl+F</code> to find the name you are looking for.</p>
-                            <ul>
-                                {% for element in b %}
-                                <li>{{element}}</li>
-                                {%endfor%}
-                            </ul>
-						{%endblock%}
-                        </section>
-
-
-
-
+						<section id="content">
+							<h3>Carlos Ferrer</h3>
+							<p>Reves is a Machine Learning project based on predicting movie revenue from the basic features of a movie, as genre, cast, crew, release date, budget, etc. It is a business tool mainly aimed for film producers, who want to know how much money the movie is going to make before even producing it.</p>
+							<p>
+								<a href="https://www.linkedin.com/in/carlos-ferrerbonsoms/"><span style="margin-left: 0px;" class="fab fa-linkedin-in fa-2x"></span></a>
+								<a href="https://github.com/carlosfbh"><span style="margin-left: 20px;" class="fab fa-github fa-2x"></span></a>
+							</p>
+							<h3>Elsa Durán</h3>
+							<p>I am a hardworking professional with over 6 years of experience since I started working while studying my university degree. I am passionate about techonolgy and marketing, and I always try to mix both disciplines in everything I do. When in marketing, I use data to base my decisions. In Data Science I seek the final business application and I tend to apply user experience fundamentals to develope a final data product. In life, I’m always keen of knowledge and new experiences.</p>
+							<p>
+								<a href="https://www.linkedin.com/in/eduranm/"><span style="margin-left: 0px;" class="fab fa-linkedin-in fa-2x"></span></a>
+								<a href="https://github.com/ElsaDuran/"><span style="margin-left: 20px;" class="fab fa-github fa-2x"></span></a>
+							</p>
+						</section>
+								
 				</div>
 			</section>
-
-
+			
 		<!-- Footer -->
 			<footer id="footer" <span style="background-color: #00b050" </span>
 		</p><span class="copyright" style="color: #ffffff">
@@ -95,6 +92,7 @@
 			</span></p>
 		<p><img src="{{ url_for('static',filename='images/reves_logo_mini_neg.jpg')}}"></p>
 		</footer>
+
 
 	<script type="text/javascript" src="{{url_for('static',filename='js/init.js')}}"></script>
 	<script type="text/javascript" src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
@@ -105,6 +103,7 @@
 	<script type="text/javascript" src="{{url_for('static',filename='js/skel.min.js')}}"></script>
 	<script type="text/javascript" src="{{url_for('static',filename='js/skel-layers.min.js')}}"></script>
 	<script type="text/javascript" src="{{url_for('static',filename='js/init.js')}}"></script>
+
 
 	</body>
 </html>

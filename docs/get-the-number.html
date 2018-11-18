@@ -39,17 +39,24 @@
 			<header id="header" class="skel-layers-fixed">
 				<nav id="nav">
 					<ul>
+						<li><a href="index.html" class="icon fa-angle-down">Home</a></li>
 						<li>
-							<a href="index.html" class="icon fa-angle-down">About Reves</a>
+							<a href="" class="icon fa-angle-down">About Reves</a>
 							<ul>
 								<li><a href="reason-why.html">Reason why</a></li>
-								<li><a href="specifications.html">Specifications</a></li>
-								<li><a href="screenplayers.html">Screenplayers</a></li>
+								<li><a href="scriptwriters.html">Scriptwriters</a></li>
+								<li><a href="structure.html">Project's structure</a></li>
+								<li><a href="next-steps.html">Next steps</a></li>
 							</ul>
 						</li>
-						<li><a href="show-me-the-money.html">Show me the money</a></li>
-						<li><a href="https://github.com/ElsaDuran/reves">View on Github</a></li>
+						<li>
+							<a href="" class="icon fa-angle-down">Show me the money</a>
+							<ul>
+								<li><a href="how-to-use-reves.html">How to use Reves</a></li>
+								<li><a href="get-the-number.html">Get the number</a></li>
 							</ul>
+						</li>
+						<li><a href="https://github.com/ElsaDuran/reves">View on Github</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -58,7 +65,6 @@
         {% block content %}
 		<section>
 			{% from "_macro.html" import render_field %}
-			{% from "_macro.html" import render_fields %}
 			<div class="container">
 			    <section id="main" class="wrapper style1">
 				    <header class="major">
@@ -68,124 +74,262 @@
 			</div>
 		</section>
 
-		<!-- Final numbers -->
-		<section id="cta" class="wrapper style2" style="background-color:#373737;margin-bottom:90px">
-			<p style="font-size:40px;color:#ffffff;margin-top:30px"> {{moviename}} revenue will be ${{revenue}}</p>
-    		<p style="color:#ffffff">Not enough? Try again! Change some parameters.</p>
-
-		</section>
+		<!-- Form inputs-->
 		<section>
                 <div class="container">
-                <form method="POST" action="" >
-					<h3>Let's introduce ourselves</h3>
-					<div class="row uniform">
-						<div class="12u">
-							{{render_field(form.name)}}
-						</div>
-					</div>
-					<h3 style="margin-top:50px">Cast and Crew</h3>
-					<div class="row uniform">
-						<div class="12u">
-							{{render_field(form.directors)}}
-							<a href="directors-index.html" target="_blank" style="font-size:15px"><span style="margin-left: 20px;margin-top:20px" class="fab fa-exclamation-circle fa-1x"></span>  Check the spelling. Directors' Index</a>
-						</div>
-						<div class="12u">
-							{{render_field(form.scriptwriters)}}
-							<a href="scriptwriters-index.html" target="_blank" style="font-size:15px"><span style="margin-left: 20px;margin-top:20px" class="fab fa-exclamation-circle fa-x"></span>  Check the spelling. Scriptwriters' Index</a>
-						</div>
-						<div class="12u">
-							<p style="margin-top:5px">Now, Reves needs to know the names and genders of the main 4 actors/actresses in your movie. Make sure you type names correctely.</p>
-							<a href="cast-index.html" target="_blank" style="font-size:15px"><span style="margin-left: 20px;margin-top:-10px" class="fab fa-exclamation-circle fa-x"></span>  Check the spelling. Cast' Index</a>
-						</div>
-						<div class="6u 12u(3);select-wrapper">
-							{{render_field(form.castnames)}}
-						</div>
-						<div class="6u 12u(3);select-wrapper">
-								{{render_field(form.cast1gender)}}
-						</div>
-					</div>
-					<h3 style="margin-top:50px">Movie plot</h3>
-					<div class="row uniform">
-						<div class="6u 12u(3);select-wrapper">
-							{{render_field(form.bellongsToCollection)}}
-						</div>
-						<div class="6u 12u(3);select-wrapper">
-							{{render_field(form.collectionName)}}
-							<a href="collections-index.html" target="_blank" style="font-size:15px"><span style="margin-left: 20px;margin-top:20px" class="fab fa-exclamation-circle fa-1x"></span> Check the spelling. Collections' Index</a>
-						</div>
-						<div class="12u">
-							{{render_field(form.genres)}}
-						</div>
-					</div>
-					<h3 style="margin-top:50px">Production features</h3>
-					<div class="row uniform">
-						<div class="12u;select-wrapper">
-							{{render_field(form.originalLanguage)}}
-						</div>
-						<div class="12u">
-							{{render_field(form.productionCompanies)}}
-							<a href="companies-index.html" target="_blank" style="font-size:15px"><span style="margin-left: 20px;margin-top:20px" class="fab fa-exclamation-circle fa-1x"></span> Check the spelling. Companies' Index</a>
-						</div>
-						<div class="12u">
-							{{render_field(form.runtime)}}
-						</div>
-						<div class="12u;select-wrapper">
-							{{render_field(form.imax)}}
-						</div>
-						<div class="12u;select-wrapper">
-							{{render_field(form.d3)}}
-						</div>
-					</div>
-					<h3 style="margin-top:50px">Release date</h3>
-					<div class="12u;select-wrapper">
-						{{render_field(form.month)}}
-					</div>
-					<div class="12u;select-wrapper" style="margin-top:20px">
-						{{render_field(form.weekday)}}
-					</div>
-					<h3 style="margin-top:50px">Keywords</h3>
-					<div class="12u;row uniform">
-						{{render_field(form.keywords)}}
-						<a href="keywords-index.html" target="_blank" style="font-size:15px"><span style="margin-left: 20px;margin-top:20px" class="fab fa-exclamation-circle fa-1x"></span> Check Keyword's Index for examples</a>
-					</div>
-                    <div class="12u;row uniform" style="margin-top:60px" align="center">
-						<ul class="actions">
-							<li><input type="submit" value="Get the number" style="font-size:25px;margin-bottom:30px"></li>
-						</ul>
-					</div>
-				</form>
-			</div>
+                	<form method="POST" action="/get-the-number-result.html" >
+						<h3>Let's introduce ourselves</h3>
+							<div class="row uniform">
+								<div class="12u">
+								{{render_field(form.title)}}
+							</div>
+							</div>
+						<h3 style="margin-top:50px">Cast and Crew</h3>
+							<div class="row uniform">
+								<div class="12u">
+									{{render_field(form.directors)}}
+									<a href="directors-index.html" target="_blank" style="font-size:15px"><span style="margin-left: 20px;margin-top:20px" class="fab fa-exclamation-circle fa-1x"></span>  Check the spelling. Directors' Index</a>
+								</div>
+								<div class="12u">
+									{{render_field(form.scriptwriters)}}
+									<a href="scriptwriters-index.html" target="_blank" style="font-size:15px"><span style="margin-left: 20px;margin-top:20px" class="fab fa-exclamation-circle fa-x"></span>  Check the spelling. Scriptwriters' Index</a>
+								</div>
+								<div class="12u">
+									<p style="margin-top:5px">Now, Reves needs to know the names of the actors and actresses that would play and the gender of the main role. Make sure you type names correctely.</p>
+									<a href="cast-index.html" target="_blank" style="font-size:15px"><span style="margin-left: 20px;margin-top:-10px" class="fab fa-exclamation-circle fa-x"></span>  Check the spelling. Cast' Index</a>
+								</div>
+								<div class="6u 12u(3);select-wrapper">
+									{{render_field(form.cast_names)}}
+								</div>
+								<div class="6u 12u(3);select-wrapper">
+									{{render_field(form.main_actor_genre)}}
+								</div>
+							</div>
+						<h3 style="margin-top:50px">Movie plot</h3>
+							<div class="row uniform">
+								<div class="6u 12u(3);select-wrapper">
+									{{render_field(form.bellongsToCollection)}}
+								</div>
+								<div class="6u 12u(2);select-wrapper">
+									{{render_field(form.collectionName)}}
+									<a href="collections-index.html" target="_blank" style="font-size:15px"><span style="margin-left: 20px;margin-top:20px" class="fab fa-exclamation-circle fa-1x"></span> Check the spelling. Collections' Index</a>
+								</div>
+							</div>
+						<h3 style="margin-top:50px">Movie's Genres</h3>
+							<div class="row uniform">
+								<div class="2u 12u(2);select-wrapper">
+									{% for subfield in form.drama %}
+										<tr>
+											<td>{{ subfield }}</td>
+											<td>{{ subfield.label }}</td>
+										</tr>
+									{% endfor %}
+								</div>
+								<div class="2u 12u(2);select-wrapper">
+									{% for subfield in form.comedy %}
+										<tr>
+											<td>{{ subfield }}</td>
+											<td>{{ subfield.label }}</td>
+										</tr>
+									{% endfor %}
+								</div>
+								<div class="2u 12u(2);select-wrapper">
+									{% for subfield in form.thriller %}
+										<tr>
+											<td>{{ subfield }}</td>
+											<td>{{ subfield.label }}</td>
+										</tr>
+									{% endfor %}
+								</div>
+								<div class="2u 12u(2);select-wrapper">
+									{% for subfield in form.action %}
+										<tr>
+											<td>{{ subfield }}</td>
+											<td>{{ subfield.label }}</td>
+										</tr>
+									{% endfor %}
+								</div>
+								<div class="2u 12u(2);select-wrapper">
+									{% for subfield in form.romance %}
+										<tr>
+											<td>{{ subfield }}</td>
+											<td>{{ subfield.label }}</td>
+										</tr>
+									{% endfor %}
+								</div>
+								<div class="2u 12u(2);select-wrapper">
+									{% for subfield in form.adventure %}
+										<tr>
+											<td>{{ subfield }}</td>
+											<td>{{ subfield.label }}</td>
+										</tr>
+									{% endfor %}
+								</div>
+								<div class="2u 12u(2);select-wrapper">
+									{% for subfield in form.crime %}
+										<tr>
+											<td>{{ subfield }}</td>
+											<td>{{ subfield.label }}</td>
+										</tr>
+									{% endfor %}
+								</div>
+								<div class="2u 12u(2);select-wrapper">
+									{% for subfield in form.science_fiction %}
+										<tr>
+											<td>{{ subfield }}</td>
+											<td>{{ subfield.label }}</td>
+										</tr>
+									{% endfor %}
+								</div>
+								<div class="2u 12u(2);select-wrapper">
+									{% for subfield in form.horror %}
+										<tr>
+											<td>{{ subfield }}</td>
+											<td>{{ subfield.label }}</td>
+										</tr>
+									{% endfor %}
+								</div>
+								<div class="2u 12u(2);select-wrapper">
+									{% for subfield in form.family %}
+										<tr>
+											<td>{{ subfield }}</td>
+											<td>{{ subfield.label }}</td>
+										</tr>
+									{% endfor %}
+								</div>
+								<div class="2u 12u(2);select-wrapper">
+									{% for subfield in form.fantasy %}
+										<tr>
+											<td>{{ subfield }}</td>
+											<td>{{ subfield.label }}</td>
+										</tr>
+									{% endfor %}
+								</div>
+								<div class="2u 12u(2);select-wrapper">
+									{% for subfield in form.mystery %}
+										<tr>
+											<td>{{ subfield }}</td>
+											<td>{{ subfield.label }}</td>
+										</tr>
+									{% endfor %}
+								</div>
+								<div class="2u 12u(2);select-wrapper">
+									{% for subfield in form.animation %}
+										<tr>
+											<td>{{ subfield }}</td>
+											<td>{{ subfield.label }}</td>
+										</tr>
+									{% endfor %}
+								</div>
+								<div class="2u 12u(2);select-wrapper">
+									{% for subfield in form.history %}
+										<tr>
+											<td>{{ subfield }}</td>
+											<td>{{ subfield.label }}</td>
+										</tr>
+									{% endfor %}
+								</div>
+								<div class="2u 12u(2);select-wrapper">
+									{% for subfield in form.music %}
+										<tr>
+											<td>{{ subfield }}</td>
+											<td>{{ subfield.label }}</td>
+										</tr>
+									{% endfor %}
+								</div>
+								<div class="2u 12u(2);select-wrapper">
+									{% for subfield in form.war %}
+										<tr>
+											<td>{{ subfield }}</td>
+											<td>{{ subfield.label }}</td>
+										</tr>
+									{% endfor %}
+								</div>
+								<div class="2u 12u(2);select-wrapper">
+									{% for subfield in form.documentary %}
+										<tr>
+											<td>{{ subfield }}</td>
+											<td>{{ subfield.label }}</td>
+										</tr>
+									{% endfor %}
+								</div>
+								<div class="2u 12u(2);select-wrapper">
+									{% for subfield in form.western %}
+										<tr>
+											<td>{{ subfield }}</td>
+											<td>{{ subfield.label }}</td>
+										</tr>
+									{% endfor %}
+								</div>
+								<div class="2u 12u(2);select-wrapper">
+									{% for subfield in form.foreign %}
+										<tr>
+											<td>{{ subfield }}</td>
+											<td>{{ subfield.label }}</td>
+										</tr>
+									{% endfor %}
+								</div>
+								<div class="2u 12u(2);select-wrapper">
+									{% for subfield in form.tv %}
+										<tr>
+											<td>{{ subfield }}</td>
+											<td>{{ subfield.label }}</td>
+										</tr>
+									{% endfor %}
+								</div>
+							</div>
+						<h3 style="margin-top:50px">Production features</h3>
+							<div class="row uniform">
+								<div class="12u;select-wrapper">
+									{{render_field(form.originalLanguage)}}
+								</div>
+								<div class="12u">
+									{{render_field(form.productionCompanies)}}
+									<a href="companies-index.html" target="_blank" style="font-size:15px"><span style="margin-left: 20px;margin-top:20px" class="fab fa-exclamation-circle fa-1x"></span> Check the spelling. Companies' Index</a>
+								</div>
+								<div class="12u">
+									{{render_field(form.runtime)}}
+								</div>
+								<div class="12u;select-wrapper">
+									{{render_field(form.imax)}}
+								</div>
+								<div class="12u;select-wrapper">
+									{{render_field(form.d3)}}
+								</div>
+							</div>
+						<h3 style="margin-top:50px">Release date</h3>
+							<div class="12u;select-wrapper">
+								{{render_field(form.month)}}
+							</div>
+							<div class="12u;select-wrapper" style="margin-top:20px">
+								{{render_field(form.weekday)}}
+							</div>
+						<h3 style="margin-top:50px">Keywords</h3>
+							<div class="12u;row uniform">
+								{{render_field(form.keywords)}}
+								<a href="keywords-index.html" target="_blank" style="font-size:15px"><span style="margin-left: 20px;margin-top:20px" class="fab fa-exclamation-circle fa-1x"></span> Check Keyword's Index for examples</a>
+							</div>
+
+							<div class="wrapper style1" style="font-size:20px" align="center">
+								<ul class="actions">
+									<li><input type="submit" value="Get the number" formtarget="_blank"></li>
+									<li><input type="reset" value="Reset"></li>
+								</ul>
+							</div>
+					</form>
+				</div>
         </section>
 
 
-		<!-- Debuggin mode -->
 
-		<section id="content" class="wrapper style1">
-			<div class="container">
-			<h3>Debuggin. Check return values</h3>
-			<p><ul><li>Moviename: {{moviename}}</li>
-				</br><li>Directores: {{directors}}</li>
-				</br><li>Guionistas: {{scriptwriters}}</li>
-				</br><li>Actores: {{cast_names}}</li>
-				</br><li>Generos: {{cast_genders}}</li>
-				</br><li>Belongs to collection: {{collection}}</li>
-				</br><li>Collections' name: {{collection_name}}</li>
-				</br><li>Language: {{language}}</li>
-				</br><li>Companies: {{production_companies}}</li>
-				</br><li>Runtime: {{runtime}}</li>
-				</br><li>Imax: {{imax}}</li>
-				</br><li>3d: {{d3}}</li>
-				</br><li>Mes: {{month}}</li>
-				</br><li>Dia de la semana: {{weekday}}</li>
-				</br><li>Keywords: {{keywords}}</li>
-			</br><li>Revenue: {{revenue}}</li></></p>
-        {%endblock%}
-			</div></section>
+
+
+		{%endblock%}
 
 		<!-- Footer -->
-		<footer id="footer" <span style="background-color: #00b050" </span>
+			<footer id="footer" <span style="background-color: #00b050" </span>
 		</p><span class="copyright" style="color: #ffffff">
-			&copy; Copyright. All rights reserved. Design by <a href="http://www.html5webtemplates.co.uk" style="color: #ffffff">Responsive Web Templates</a>
+			&copy; Copyright. All rights reserved.</a>
 			</span></p>
 		<p><img src="{{ url_for('static',filename='images/reves_logo_mini_neg.jpg')}}"></p>
 		</footer>

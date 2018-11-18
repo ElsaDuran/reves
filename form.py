@@ -1,45 +1,25 @@
 from wtforms import Form
-from wtforms import TextAreaField, RadioField,TextField,FloatField,SelectField,BooleanField,IntegerField,SelectMultipleField
+from wtforms import TextAreaField, RadioField,TextField,FloatField,SelectField,BooleanField,IntegerField
 from wtforms import validators
 import unicodedata
 
 
 
 class CommentForm(Form):
-    name=TextField("Hi! I'm Reves. What's your movie's name?*",
-                   #[validators.length(min=1,max=200, message="Relax, I won't tell anyone. Type something.")]
+    title=TextField("Hi! I'm Reves. What's your movie's name?*",
+                   #[validators.length(min=1, message="Relax, I won't tell anyone. Type something.")]
                    )
     directors=TextField("Type directors' names separated by commas")
     scriptwriters=TextField("Type scriptwriters' names separated by commas")
-    genres=SelectMultipleField("Select you movie's genres (Multiple Choice)",
-                               choices=[("Drama","Drama"),
-                                        ("Comedy","Comedy"),
-                                        ("Thriller","Thriller"),
-                                        ("Action","Action"),
-                                        ("Romance","Romance"),
-                                        ("Adventure","Adventure"),
-                                        ("Crime","Crime"),
-                                        ("Science Fiction","Science Fiction"),
-                                        ("Horror","Horror"),
-                                        ("Family","Family"),
-                                        ("Fantasy","Fantasy"),
-                                        ("Mystery","Mystery"),
-                                        ("Animation","Animation"),
-                                        ("History","History"),
-                                        ("Music","Music"),
-                                        ("War","War"),
-                                        ("Documentary","Documentary"),
-                                        ("Western","Western"),
-                                        ("Foreign","Foreign"),
-                                        ("TV Movie","TV Movie")])
-    castnames=TextField("Type actors'/actresses' names separated by commas*")
-    cast1gender=SelectField("Main character's gender",
+    cast_names=TextField("Type actors'/actresses' names separated by commas")
+    main_actor_genre=SelectField("Main character's gender",
+                            #[validators.DataRequired(message="Please, select an option")],
                             choices=[(0,"Select"),
-                                     (1,"male"),
-                                     (2,"female")],
+                                     (1,"female"),
+                                     (2,"male")],
                             coerce=int)
     productionCompanies=TextField("Type Production Companies' names separated by commas",
-                   #[validators.length(min=1,max=200, message="At least one company, please.")]
+                   #[validators.length(min=1, message="At least one company, please.")]
                                   )
     originalLanguage=SelectField("What is the movie's original language?",
                                  choices=[(0,"Select"),
@@ -95,3 +75,25 @@ class CommentForm(Form):
                               (1, "No"),
                               (2, "Yes")],
                      coerce=int)
+    drama=RadioField("Drama",choices=[("Drama","Drama")])
+    comedy=RadioField("Comedy",choices=[("Comedy","Comedy")])
+    thriller=RadioField("Thriller",choices=[("Thriller","Thriller")])
+    action=RadioField("Action",choices=[("Action","Action")])
+    romance=RadioField("Romance",choices=[("Romance","Romance")])
+    adventure=RadioField("adventure",choices=[("Adventure","Adventure")])
+    crime=RadioField("Crime",choices=[("Crime","Crime")])
+    science_fiction=RadioField("Science Fiction",choices=[("Science Fiction","Science Fiction")])
+    horror=RadioField("Horror",choices=[("Horror","Horror")])
+    family=RadioField("Family",choices=[("Family","Family")])
+    fantasy=RadioField("Fantasy",choices=[("Fantasy","Fantasy")])
+    mystery=RadioField("Mystery",choices=[("Mystery","Mystery")])
+    animation=RadioField("Animation",choices=[("Animation","Animation")])
+    history=RadioField("History",choices=[("History","History")])
+    music=RadioField("Music",choices=[("Music","Music")])
+    war = RadioField("War", choices=[("War", "War")])
+    documentary=RadioField("Documentary",choices=[("Documentary","Documentary")])
+    western=RadioField("Western",choices=[("Western","Western")])
+    foreign=RadioField("Foreign",choices=[("Foreign","Foreign")])
+    tv=RadioField("TV Movie",choices=[("TV Movie","TV Movie")])
+
+

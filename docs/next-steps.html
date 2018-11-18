@@ -11,7 +11,7 @@
 
   				gtag('config', 'UA-128049794-1');
 			</script>
-		<title>Screenplayers</title>
+		<title>Reason Why</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -24,12 +24,12 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
-		<script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
 		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/skel.css')}}">
 		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css')}}">
 		<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style-xlarge.css')}}">
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+
 	</head>
 	<body>
 
@@ -55,36 +55,34 @@
 		<!-- Main -->
 			<section id="main" class="wrapper style1">
 				<header class="major">
-					<h2>Screenplayers</h2>
+					<h2>Reason Why</h2>
 				</header>
 				<div class="container">
-
+						
 					<!-- Content -->
 						<section id="content">
-							<h3>Carlos Ferrer</h3>
+
+							<p style="text-align:center;"><img src="{{ url_for('static',filename='images/reves.gif')}}" alt="Reves animation"</p>
+							<h3>What is Reves?</h3>
 							<p>Reves is a Machine Learning project based on predicting movie revenue from the basic features of a movie, as genre, cast, crew, release date, budget, etc. It is a business tool mainly aimed for film producers, who want to know how much money the movie is going to make before even producing it.</p>
-							<p>
-								<a href="https://www.linkedin.com/in/carlos-ferrerbonsoms/"><span style="margin-left: 0px;" class="fab fa-linkedin-in fa-2x"></span></a>
-								<a href="https://github.com/carlosfbh"><span style="margin-left: 20px;" class="fab fa-github fa-2x"></span></a>
-							</p>
-							<h3>Elsa Durán</h3>
-							<p>I am a hardworking professional with over 6 years of experience since I started working while studying my university degree. I am passionate about techonolgy and marketing, and I always try to mix both disciplines in everything I do. When in marketing, I use data to base my decisions. In Data Science I seek the final business application and I tend to apply user experience fundamentals to develope a final data product. In life, I’m always keen of knowledge and new experiences.</p>
-							<p>
-								<a href="https://www.linkedin.com/in/eduranm/"><span style="margin-left: 0px;" class="fab fa-linkedin-in fa-2x"></span></a>
-								<a href="https://github.com/ElsaDuran/"><span style="margin-left: 20px;" class="fab fa-github fa-2x"></span></a>
-							</p>
+							<h3>Why did we decide to develope this specific project?</h3>
+							<p>We wanted to create a project that would actually make sense in real life. We didn’t want to spend hours of work just for a research project to store in a drawer. The movie topic was chosen just because we liked it, and the idea of making a data-based business tool came to us analyzing the data we had, and thinking how could we make money out of it.</p>
+							<h3>Why is it relevant as a Final Project?</h3>
+							<p>During the developing of Reves, we have had to face the different challenges that have been raised as such from the teachers during this course: exhaustive data cleaning,chossing relevant variables, identifying and applying the most convenient ML model, visualizing the data, and, as a bonus track, applying a Deep Learning neural network in order to experience this technology and to try to better the accuracy, despite the loss of information about how the model actually works.</p>
+							<h3>Why would it relevant for the industry?</h3>
+							<p>This is a basic model developed using The Movies Dataset, a public Project in Kaggle. Of course, the accuracy of our model is conditioned to the limited ammount of data we have in this public dataset, but Reve hasn’t work its magic yet. It has a huge low-cost-growth-potential that will make it extremely attractive for film producing companies. The idea is simple: It is way more cheaper to collect the basic data from Internet for every movie ever made thank producing a single movie. Productions companies would only have to invest some money in harvesting the data and then apply the model (with some restructuring). Voilá: profit margins will rise.</p>
 						</section>
 								
 				</div>
 			</section>
 			
 		<!-- Footer -->
-			<footer id="footer" <span style="background-color: #00b050" </span>>
-				</p><span class="copyright" style="color: #ffffff">
-			&copy; Copyright. All rights reserved. Design by <a href="http://www.html5webtemplates.co.uk" style="color: #ffffff">Responsive Web Templates</a>
-				</span></p>
-				<p><img src="{{ url_for('static',filename='images/reves_logo_mini_neg.jpg')}}"></p>
-			</footer>
+			<footer id="footer" <span style="background-color: #00b050" </span>
+		</p><span class="copyright" style="color: #ffffff">
+			&copy; Copyright. All rights reserved.</a>
+			</span></p>
+		<p><img src="{{ url_for('static',filename='images/reves_logo_mini_neg.jpg')}}"></p>
+		</footer>
 
 
 	<script type="text/javascript" src="{{url_for('static',filename='js/init.js')}}"></script>

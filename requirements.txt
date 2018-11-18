@@ -4,5 +4,6 @@ Flask-Cors==3.0.4
 pandas==0.23.0
 WTForms==2.2.1
 gunicorn==18.0
+xgboost==0.81
 
 
