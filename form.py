@@ -7,7 +7,7 @@ import unicodedata
 
 class CommentForm(Form):
     title=TextField("Hi! I'm Reves. What's your movie's name?*",
-                   [validators.length(min=1, message="Relax, I won't tell anyone. Type something.")]
+                   #[validators.length(min=1, message="Relax, I won't tell anyone. Type something.")]
                    )
     directors=TextField("Type directors' names separated by commas")
     scriptwriters=TextField("Type scriptwriters' names separated by commas")

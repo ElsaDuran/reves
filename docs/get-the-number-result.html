@@ -68,7 +68,7 @@
 			<div class="container">
 			    <section id="main" class="wrapper style1">
 				    <header class="major">
-					    <h2>{{title}} revenue will be</h2>
+					    <h2>{{title}}'s revenue will be</h2>
 				    </header>
 				</section>
 			</div>
@@ -77,6 +77,9 @@
 		<!-- Final numbers -->
 		<section id="cta" class="wrapper style2" style="background-color:#373737;margin-bottom:90px">
 			<p style="font-size:60px;color:#ffffff;margin-top:30px">  ${{revenue}}</p>
+			{%if revenue==0 %}
+				<p style="color:#ffffff;font-size:20px">Reves needs more info about your movie</p>
+			{%endif%}
     		<p style="color:#ffffff;font-size:20px">Not enough? <a href="get-the-number.html"> Try again! </a> Change some parameters.</p>
 
 		</section>

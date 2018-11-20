@@ -1,7 +1,8 @@
 from flask import Flask
 from flask import render_template
-from flask import request, redirect
+from flask import request
 import form
+
 
 
 app=Flask(__name__,template_folder="docs",static_folder="static")
@@ -17,7 +18,7 @@ def index2():
 @app.route("/get-the-number-result.html", methods=["POST","GET"])
 def result():
     comment_form = form.CommentForm(request.form)
-    title = "Your movie's"
+    title = ""
     directors = []
     scriptwriters = []
     cast_names = []
@@ -92,9 +93,12 @@ def result():
     if request.method == "POST":
 
         # loading data from comment form
-        title = (comment_form.title.data) + "'s"
+
         if len(title)==0:
             title="Your movie"
+        else:
+            title = (comment_form.title.data)
+
         directors = str.split(comment_form.directors.data, ",")
         scriptwriters = str.split(comment_form.scriptwriters.data, ",")
         cast_names = str.split(comment_form.cast_names.data, ",")
@@ -130,148 +134,154 @@ def result():
         weekday = str(comment_form.weekday.data).split(" ")
         keywords = str.split(comment_form.keywords.data, ",")
 
-        # data transformation
+        if cast_names[0] == "" and directors[0] == "" and scriptwriters[0]=="" and production_companies[0]=="":
+            revenue = 0
+        else:
 
-        companies_count = len(production_companies)
+            # data transformation
 
-        genres = [drama, comedy, thriller, action, romance, adventure, crime, science_fiction, horror, family, fantasy,
-                  mystery, animation, history, music, war, documentary, western, foreign, tv]
-        genres = [x for x in genres if x != "None"]
-        genres_count = len(genres)
+            companies_count = len(production_companies)
 
-        if imax == 2:
-            if "imax" not in keywords:
-                keywords.append("imax")
+            genres = [drama, comedy, thriller, action, romance, adventure, crime, science_fiction, horror, family, fantasy,
+                      mystery, animation, history, music, war, documentary, western, foreign, tv]
+            genres = [x for x in genres if x != "None"]
+            genres_count = len(genres)
 
-        if d3 == 2:
-            if "3d" not in keywords:
-                keywords.append("3d")
+            if imax == 2:
+                if "imax" not in keywords:
+                    keywords.append("imax")
 
-        if planguage == 1:
-            language = "en"
-        elif planguage == 2:
-            language = "no"
+            if d3 == 2:
+                if "3d" not in keywords:
+                    keywords.append("3d")
 
-    data = [directors,
-            scriptwriters,
-            collection_name,
-            genres,
-            language,
-            production_companies,
-            runtime,
-            keywords,
-            month,
-            weekday,
-            cast_names,
-            companies_count,
-            title,
-            genres_count,
-            main_actor_genre]
+            if planguage == 1:
+                language = "en"
+            elif planguage == 2:
+                language = "no"
 
-    x = pd.DataFrame([data], columns=['directors', 'writers', 'belongs_to_collection', 'genres',
-                                      'original_language', 'production_companies', 'runtime', 'keywords',
-                                      'release_month', 'release_weekday', 'cast_names',
-                                      'production_companies_counter', 'title', 'genres_counter',
-                                      'main_actor_genre'])
+            data = [directors,
+                    scriptwriters,
+                    collection_name,
+                    genres,
+                    language,
+                    production_companies,
+                    runtime,
+                    keywords,
+                    month,
+                    weekday,
+                    cast_names,
+                    companies_count,
+                    title,
+                    genres_count,
+                    main_actor_genre]
 
-    x["directors"] = x["directors"].apply(lambda x: [rf.clean(name) for name in x])
-    x["directors"] = x["directors"].apply(rf.get_mean, variable_mean_dict=directors_dict)
+            x = pd.DataFrame([data], columns=['directors', 'writers', 'belongs_to_collection', 'genres',
+                                              'original_language', 'production_companies', 'runtime', 'keywords',
+                                              'release_month', 'release_weekday', 'cast_names',
+                                              'production_companies_counter', 'title', 'genres_counter',
+                                              'main_actor_genre'])
 
-    x["writers"] = x["writers"].apply(lambda x: [rf.clean(name) for name in x])
-    x["writers"] = x["writers"].apply(rf.get_mean, variable_mean_dict=writers_dict)
+            x["directors"] = x["directors"].apply(lambda x: [rf.clean(name) for name in x])
+            x["directors"] = x["directors"].apply(rf.get_mean, variable_mean_dict=directors_dict)
 
-    x["genres"] = x["genres"].apply(lambda x: [rf.clean(name) for name in x])
-    x["genres"] = x["genres"].apply(rf.get_mean, variable_mean_dict=genres_dict)
+            x["writers"] = x["writers"].apply(lambda x: [rf.clean(name) for name in x])
+            x["writers"] = x["writers"].apply(rf.get_mean, variable_mean_dict=writers_dict)
 
-    x["cast_names"] = x["cast_names"].apply(lambda x: [rf.clean(name) for name in x])
-    x["cast_names"] = x["cast_names"].apply(rf.get_mean, variable_mean_dict=cast_dict)
+            x["genres"] = x["genres"].apply(lambda x: [rf.clean(name) for name in x])
+            x["genres"] = x["genres"].apply(rf.get_mean, variable_mean_dict=genres_dict)
 
-    x["belongs_to_collection"] = x["belongs_to_collection"].apply(lambda x: [rf.clean(name) for name in x])
-    x["belongs_to_collection"] = x["belongs_to_collection"].apply(rf.get_mean, variable_mean_dict=collection_dict)
+            x["cast_names"] = x["cast_names"].apply(lambda x: [rf.clean(name) for name in x])
+            x["cast_names"] = x["cast_names"].apply(rf.get_mean, variable_mean_dict=cast_dict)
 
-    x["original_language"] = x["original_language"].apply(lambda x: [rf.clean(name) for name in [x]])
-    x["original_language"] = x["original_language"].apply(rf.get_mean, variable_mean_dict=language_dict)
+            x["belongs_to_collection"] = x["belongs_to_collection"].apply(lambda x: [rf.clean(name) for name in x])
+            x["belongs_to_collection"] = x["belongs_to_collection"].apply(rf.get_mean, variable_mean_dict=collection_dict)
 
-    x["production_companies"] = x["production_companies"].apply(lambda x: [rf.clean(name) for name in x])
-    x["production_companies"] = x["production_companies"].apply(rf.get_mean, variable_mean_dict=production_company_dict)
+            x["original_language"] = x["original_language"].apply(lambda x: [rf.clean(name) for name in [x]])
+            x["original_language"] = x["original_language"].apply(rf.get_mean, variable_mean_dict=language_dict)
 
-    x["release_month"] = x["release_month"].apply(rf.get_mean, variable_mean_dict=month_dict)
-    x["release_weekday"] = x["release_weekday"].apply(rf.get_mean, variable_mean_dict=weekday_dict)
+            x["production_companies"] = x["production_companies"].apply(lambda x: [rf.clean(name) for name in x])
+            x["production_companies"] = x["production_companies"].apply(rf.get_mean, variable_mean_dict=production_company_dict)
 
-    x["keywords"] = x["keywords"].apply(lambda x: [rf.clean(name) for name in x])
-    x["keywords"] = x["keywords"].apply(rf.get_mean, variable_mean_dict=keywords_dict)
+            x["release_month"] = x["release_month"].apply(rf.get_mean, variable_mean_dict=month_dict)
+            x["release_weekday"] = x["release_weekday"].apply(rf.get_mean, variable_mean_dict=weekday_dict)
 
-    x["main_actor_genre"] = x["main_actor_genre"].apply(rf.get_mean, variable_mean_dict=cast_gender_dict)
+            x["keywords"] = x["keywords"].apply(lambda x: [rf.clean(name) for name in x])
+            x["keywords"] = x["keywords"].apply(rf.get_mean, variable_mean_dict=keywords_dict)
 
-    # applying Reves model
+            x["main_actor_genre"] = x["main_actor_genre"].apply(rf.get_mean, variable_mean_dict=cast_gender_dict)
 
-    x = x.drop(["title"], axis=1).values
-    revenue = int(xgbo.predict(x)[0])
-    if revenue<0:
-        revenue=0
-    else:
-        revenue='{0:,}'.format(revenue)
+            # applying Reves model
 
-    directors=(', '.join(directors))
-    scriptwriters=(', '.join(scriptwriters))
-    cast_names=(', '.join(cast_names))
+            x = x.drop(["title"], axis=1).values
+            revenue = int(xgbo.predict(x)[0])
+            if revenue<0:
+                revenue=0
+            else:
+                revenue='{0:,}'.format(revenue)
 
-    if main_actor_genre[0]=="2":
-        main_actor_genre="Male"
-    elif main_actor_genre[0]=="1":
-        main_actor_genre="Female"
-    else:
-        main_actor_genre="No value"
+            directors=(', '.join(directors))
+            scriptwriters=(', '.join(scriptwriters))
+            cast_names=(', '.join(cast_names))
 
-    collection_name=collection_name[0]
-    genres=(', '.join(genres))
-    production_companies=(", ".join(production_companies))
-    keywords = (", ".join(keywords))
+            if main_actor_genre[0]=="2":
+                main_actor_genre="Male"
+            elif main_actor_genre[0]=="1":
+                main_actor_genre="Female"
+            else:
+                main_actor_genre="No value"
 
-    if language=="en":
-        language="English"
-    elif language=="no":
-        language="Not English"
+            collection_name=collection_name[0]
+            genres=(', '.join(genres))
+            production_companies=(", ".join(production_companies))
+            keywords = (", ".join(keywords))
 
-    if month[0]=="1":
-        month="January"
-    elif month[0]=="2":
-        month="February"
-    elif month[0]=="3":
-        month="March"
-    elif month[0]=="4":
-        month="April"
-    elif month[0]=="5":
-        month="May"
-    elif month[0]=="6":
-        month="June"
-    elif month[0]=="7":
-        month="July"
-    elif month[0]=="8":
-        month="August"
-    elif month[0]=="9":
-        month="September"
-    elif month[0]=="10":
-        month="October"
-    elif month[0]=="11":
-        month="November"
-    elif month[0]=="12":
-        month="December"
+            if language=="en":
+                language="English"
+            elif language=="no":
+                language="Not English"
 
-    if weekday[0]=="1":
-        weekday="Monday"
-    elif weekday[0]=="2":
-        weekday="Tuesday"
-    elif weekday[0]=="3":
-        weekday="Wednesday"
-    elif weekday[0]=="4":
-        weekday="Thursday"
-    elif weekday[0]=="5":
-        weekday="Friday"
-    elif weekday[0]=="6":
-        weekday="Saturday"
-    elif weekday[0]=="7":
-        weekday="Sunday"
+            if month[0]=="1":
+                month="January"
+            elif month[0]=="2":
+                month="February"
+            elif month[0]=="3":
+                month="March"
+            elif month[0]=="4":
+                month="April"
+            elif month[0]=="5":
+                month="May"
+            elif month[0]=="6":
+                month="June"
+            elif month[0]=="7":
+                month="July"
+            elif month[0]=="8":
+                month="August"
+            elif month[0]=="9":
+                month="September"
+            elif month[0]=="10":
+                month="October"
+            elif month[0]=="11":
+                month="November"
+            elif month[0]=="12":
+                month="December"
+
+            if weekday[0]=="1":
+                weekday="Monday"
+            elif weekday[0]=="2":
+                weekday="Tuesday"
+            elif weekday[0]=="3":
+                weekday="Wednesday"
+            elif weekday[0]=="4":
+                weekday="Thursday"
+            elif weekday[0]=="5":
+                weekday="Friday"
+            elif weekday[0]=="6":
+                weekday="Saturday"
+            elif weekday[0]=="7":
+                weekday="Sunday"
+
+
 
     return render_template("get-the-number-result.html",
                            form=comment_form,

@@ -11,7 +11,7 @@
 
   				gtag('config', 'UA-128049794-1');
 			</script>
-		<title>Specifications</title>
+		<title>Reves project structure</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -36,17 +36,24 @@
 			<header id="header" class="skel-layers-fixed">
 				<nav id="nav">
 					<ul>
+						<li><a href="index.html" class="icon fa-angle-down">Home</a></li>
 						<li>
-							<a href="index.html" class="icon fa-angle-down">About Reves</a>
+							<a href="" class="icon fa-angle-down">About Reves</a>
 							<ul>
 								<li><a href="reason-why.html">Reason why</a></li>
-								<li><a href="specifications.html">Specifications</a></li>
-								<li><a href="screenplayers.html">Screenplayers</a></li>
+								<li><a href="scriptwriters.html">Scriptwriters</a></li>
+								<li><a href="structure.html">Project's structure</a></li>
+								<li><a href="next-steps.html">Next steps</a></li>
 							</ul>
 						</li>
-						<li><a href="show-me-the-money.html">Show me the money</a></li>
-						<li><a href="https://github.com/ElsaDuran/reves">View on Github</a></li>
+						<li>
+							<a href="" class="icon fa-angle-down">Show me the money</a>
+							<ul>
+								<li><a href="how-to-use-reves.html">How to use Reves</a></li>
+								<li><a href="get-the-number.html">Get the number</a></li>
 							</ul>
+						</li>
+						<li><a href="https://github.com/ElsaDuran/reves">View on Github</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -54,88 +61,74 @@
 		<!-- Main -->
 			<section id="main" class="wrapper style1">
 				<header class="major">
-					<h2>Reves specifications</h2>
+					<h2>Reves project structure</h2>
 				</header>
 				<div class="container">
-						
+
 					<!-- Content -->
 						<section id="content">
-							<h3>Where does the data come from?</h3>
-							<p>This is a basic model developed using The Movies Dataset, a public Project in Kaggle. Of course, the accuracy of our model is conditioned to the limited ammount of data we have in this public dataset.</p>
-							<p>You can check the Kaggle website <a href="https://www.kaggle.com/rounakbanik/the-movies-dataset/kernels">here</a></a></p>
-							<h3>Reves development structure</h3>
-								<div class="container">
-						<p style="color: #373737">Reves development is divided in different Jupyter notebook for easier understanding. Once in Reves, you will be able to navigate through the notebooks without having to reach this page, so if you wish to review the full project, start with Cleaning Data. If you'd like to read a specific part of the project, just go directly to it. </p>
-						</header>
-					<div class="row">
-						<div class="4u 6u(2) 12u$(3)">
-							<article class="box post"<span style="background-color: #f3f4f3" ></span>
-								<h3>Cleaning Data</h3>
-								<p>Initial data exploration and irrelevant data cleaning.</p>
-								<ul class="actions">
-									<li><a href="https://github.com/ElsaDuran/reves/blob/master/01.Cleaning_Data.ipynb" class="button special"> Go to notebook</a></li>
-								</ul>
-							</article>
-						</div>
-						<div class="4u 6u$(2) 12u$(3)">
-							<article class="box post"<span style="background-color: #f3f4f3" ></span>
-								<h3>Data Engineering</h3>
-								<p>Data transformation to fit the model requirements. New features engineering. </p>
-								<ul class="actions">
-									<li><a href="https://github.com/ElsaDuran/reves/blob/master/02.Data%20Engineering.ipynb" class="button special">Go to notebook</a></li>
-								</ul>
-							</article>
-						</div>
-						<div class="4u$ 6u(2) 12u$(3)">
-							<article class="box post"<span style="background-color: #f3f4f3" ></span>
-								<h3>Modelling</h3>
-								<p>Iterations and metrics. Finding the best Reves version.</p>
-								<ul class="actions">
-									<li><a href="#" class="button special">Go to notebook</a></li>
-								</ul>
-							</article>
-						</div>
-						<div class="4u 6u$(2) 12u$(3)">
-							<article class="box post"<span style="background-color: #f3f4f3" ></span>
-								<h3>Training & Conclusions</h3>
-								<p>Final model, traning and Reves conclusions.</p>
-								<ul class="actions">
-									<li><a href="#" class="button special">Go to notebook</a></li>
-								</ul>
-							</article>
-						</div>
-						<div class="4u 6u(2) 12u$(3)">
-							<article class="box post"<span style="background-color: #f3f4f3" ></span>
-								<h3>Data Visualization</h3>
-								<p>Web app development and visualization.</p>
-								<ul class="actions">
-									<li><a href="#" class="button special">Go to notebook</a></li>
-								</ul>
-							</article>
-						</div>
-						<div class="4u$ 6u$(2) 12u$(3)">
-							<article class="box post"<span style="background-color: #f3f4f3" ></span>
-								<h3>Extra materials</h3>
-								<p>Aditional notebooks and bonus track.</p>
-								<ul class="actions">
-									<li><a href="#" class="button special">Go to notebook</a></li>
-								</ul>
-							</article>
-						</div>
-					</div>
+							<div class="wrapper style 1">
+									<p style="color: #373737">
+										Reves development is divided in different Jupyter notebook for easier understanding. <strong>Once in Reves notebooks, you will be able to navigate through the notebooks without having to reach this page</strong>, as we have prepared a link at the end of each notebook that will lead you to the following document.
+										</br></br>To share data between notebooks we have used Pandas' method <code>pd.to_pickle</code> to avoid transforming lists in strings as method <code>pd.to_csv</code> does.
+										</br></br>If you wish to review the full project, start with Cleaning Data. In case you'd like to review a specific part of the project, just go directly to it.</p>
+
+							<div class="row">
+								<div class="6u 12u$(3)">
+									<article class="box post"<span style="background-color: #f3f4f3" ></span>
+										<h3>Cleaning Data</h3>
+											<p>Initial data exploration and irrelevant data cleaning.</p>
+												<ul class="actions">
+													<li><a href="https://github.com/ElsaDuran/reves/blob/master/01.Cleaning_Data.ipynb" target="_blank" class="button special">View notebook on Github</a></li>
+												</ul>
+									</article>
+								</div>
+								<div class="6u 12u$(3)">
+									<article class="box post"<span style="background-color: #f3f4f3" ></span>
+										<h3>Data Engineering</h3>
+											<p>Data transformation to model requirements. Features engineering. </p>
+												<ul class="actions">
+													<li><a href="https://github.com/ElsaDuran/reves/blob/master/02.Data_Engineering.ipynb" target="_blank" class="button special">View notebook on Github</a></li>
+												</ul>
+									</article>
+								</div>
+								<div class="6u 12u$(3)">
+									<article class="box post"<span style="background-color: #f3f4f3" ></span>
+									<h3>Modelling</h3>
+										<p>Iterations and metrics. Finding the best Reves version.</p>
+											<ul class="actions">
+												<li><a href="https://github.com/ElsaDuran/reves/blob/master/03.Model.ipynb" target="_blank" class="button special">View notebook on Github</a></li>
+											</ul>
+									</article>
+								</div>
+								<div class="6u 12u$(3)">
+									<article class="box post"<span style="background-color: #f3f4f3" ></span>
+										<h3>Reves to production</h3>
+											<p>Final model applied on production enviroment.</p>
+												<ul class="actions">
+													<li><a href="https://github.com/ElsaDuran/reves/blob/master/04.Reves_to_production.ipynb" target="_blank" class="button special">View notebook on Github</a></li>
+												</ul>
+									</article>
+								</div>
+							</div>
 				</div>
 						</section>
-								
+
 				</div>
 			</section>
+
+
+
+
+
 			
 		<!-- Footer -->
-			<footer id="footer" <span style="background-color: #00b050" </span>>
-				</p><span class="copyright" style="color: #ffffff">
-			&copy; Copyright. All rights reserved. Design by <a href="http://www.html5webtemplates.co.uk" style="color: #ffffff">Responsive Web Templates</a>
-				</span></p>
-				<p><img src="{{ url_for('static',filename='images/reves_logo_mini_neg.jpg')}}"></p>
-			</footer>
+			<footer id="footer" <span style="background-color: #00b050" </span>
+		</p><span class="copyright" style="color: #ffffff">
+			&copy; Copyright. All rights reserved.</a>
+			</span></p>
+		<p><img src="{{ url_for('static',filename='images/reves_logo_mini_neg.jpg')}}"></p>
+		</footer>
 
 
 	<script type="text/javascript" src="{{url_for('static',filename='js/init.js')}}"></script>
