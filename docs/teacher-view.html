@@ -74,9 +74,10 @@
 				<div class="container">
 					<header class="major">
 						<h2>Hi [Isra,Dani]. Welcome to Reves!</h2>
-						<p style="color: #373737;font-size:20px">You have reached Reves' site for teachers. This is just an private and extended view of Reves' official website, specially developed for you, to make it easier for you to understand and grade the project. We will guide you through the material, step by step, so you can reproduce the project from start to end. </p>
+						<p style="color: #373737;font-size:20px">You have reached Reves' site for teachers. This is just a private and extended view of Reves' official website, specially developed for you, to make it easier for you to understand and grade the project. We will guide you through the material, step by step, so you can reproduce the project from start to end. </p>
 						<p style="color: #373737;font-size:20px">Reves' official website has been created for sharing our project with other users or potential clients, and that is why it's commercial-focused. It also includes a web app to use Reves. Please, take a look at it after reviewing our project.</p>
 						<p style="color: #373737;font-size:20px">Thanks in advanced for all that you've teached us. We hope you enjoy our work as much as we do.</p>
+					<img src="{{ url_for('static',filename='images/keanu.png')}}">
 					</header>
 					</div>
 				<div class="container" style="margin-bottom: 0px">
@@ -128,10 +129,14 @@
 					<h3>Download data</h3>
 					<p>If you haven't done so yet, you should clone or download <a href="https://github.com/ElsaDuran/reves"> our Github repo</a>. Within this files, you will find:
 						<ul>
-							<li>Jupyter Notebooks</li>
-							<li>Python file with Reves' function library. You will import it at the beggining of each notebook, but you can review its content here.</li>
-							<li>Python file with trained model</li>
-							<li>Docs file with the website/webapp files. It is stored in this file in order to run the web in Github Pages.</li>
+							<li>4 Jupyter Notebooks.</li>
+							<li>Python file with Reves' function library. You will import it at the beggining of each notebook, but you can review its content <a href="https://github.com/ElsaDuran/reves/blob/master/revesFunctions.py">here.</a></li>
+							<li>Python files with Reves' app (called revesapp.py) and form (form.py)</li>
+							<li>Procfile and requirements.txt file for app's deployment</li>
+							<li>Pkl file with trained model</li>
+							<li>Docs and Static directories with HTML, CSS and static files for website.</li>
+							<li>Developing directory with former notebooks.</li>
+							<li>Tableau_viz directory with some plots for data exploration.</li>
 					</ul>
 					</p>
 					<h3>What do you need to run the project?</h3>
@@ -142,9 +147,12 @@
 					<li>Unidecode. Use <code>pip install unidecode</code></li>
 					<li>XGBoost. Use <code>pip install xgboost</code></li>
 					<li>WTforms. Use <code>pip install wtforms</code></li>
+					<li>IMDB extra file. Too large to upload to Github. You can download it from <a href="https://1drv.ms/u/s!Am4Q44WrF-l9k0WBuDBK4dVo-vB6">this link.</a> Save it in your reves/data/imdb directory.</li></ul></p>
+
+					<p>In order to run Notebook 3 (Modeling) in local:</p>
 					<li>Graphviz. Use <code>pip install graphviz</code></li>
-					<li>IMDB extra file. Too large to upload to Github. You can download them from <a href="https://1drv.ms/u/s!Am4Q44WrF-l9k0WBuDBK4dVo-vB6">this link.</a> Save it in your reves/data/imdb directory.</li></ul></p>
-					<p>To run Reves' web app in local, you'll need to go to the app's directory and run in your command prompt "python revesapp.py". Then, open the route given in your browser (Chrome if possible). If you just open .html files, CSS styles won't be displayed and apps' functionality won't be available.</br>
+					<li>Shap. Use<code>pip install shap</code></li>
+					</br><p>To run Reves' web app in local, you'll need to go to the app's directory and run in your command prompt "python revesapp.py". Then, open the route given in your browser (Chrome if possible). If you just open .html files, CSS styles won't be displayed and apps' functionality won't be available.</br>
 					</br>If you run Reves from the Internet, the first time you access the web it might take a wile to load the page, since we are using a Heroku's free account and dynos sleep after 30 minutes of inactivity. Please, be patient.</p>
 
 					<h3>Reves' structure</h3>
@@ -195,7 +203,11 @@
 				</div>
 				</section>
 
-				</div>
+		<section id="cta" class="wrapper style3" style="background-color:#373737">
+					<h2>Wanna try the tool?</h2>
+					<ul class="actions">
+					<li><a href="get-the-number.html" class="button big">Let's go!</a></li>
+					</ul>
 			</section>
 
 		<!-- Footer -->

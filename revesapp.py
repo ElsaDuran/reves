@@ -376,7 +376,7 @@ def teacher():
 @app.route("/collections-index.html")
 def collectionsindex():
     import pandas as pd
-    collections =pd.read_pickle("./transformation/collection.pickle")
+    collections =pd.read_pickle("./transformation/collection_dict.pickle")
     b=sorted(list(collections.keys()))
     c=len(b)
     return render_template("collections-index.html",collections=collections,b=b,c=c)
