@@ -3,10 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="1ac2f932-48ee-42c4-9db2-57563d9653c1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/reason-why.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/reason-why.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/structure.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/structure.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/04.Reves_to_production-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/04.Reves_to_production-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01.Cleaning_Data.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/01.Cleaning_Data.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02.Data_Engineering.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/02.Data_Engineering.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03.Model.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/03.Model.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04.Reves_to_production.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/04.Reves_to_production.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cleaned_reves_df.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_reves_df.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/reves.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/data/reves.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/how-to-use-reves.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/how-to-use-reves.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/next-steps.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/next-steps.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/scriptwriters.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/scriptwriters.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/teacher-view.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/teacher-view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/revesapp.py" beforeDir="false" afterPath="$PROJECT_DIR$/revesapp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xgbo_model.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/xgbo_model.pkl" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,43 +72,43 @@
     <session id="1374426055">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.8" value="2" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="43" />
-          <entry key="html" value="5690" />
-          <entry key="py" value="6791" />
+          <entry key="html" value="11648" />
+          <entry key="py" value="6809" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="43" />
-          <entry key="HTML" value="5690" />
-          <entry key="Python" value="6791" />
+          <entry key="HTML" value="11648" />
+          <entry key="Python" value="6809" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
-          <entry key="html" value="40" />
-          <entry key="py" value="10" />
+          <entry key="html" value="43" />
+          <entry key="py" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="HTML" value="40" />
-          <entry key="Python" value="10" />
+          <entry key="HTML" value="43" />
+          <entry key="Python" value="12" />
         </counts>
       </usages-collector>
     </session>
@@ -106,65 +116,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/form.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-                <marker date="1542574044186" expanded="true" signature="182:183" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/companies-index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1575">
-              <caret line="63" column="38" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="95" column="138" selection-start-line="95" selection-start-column="138" selection-end-line="95" selection-end-column="138" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/reason-why.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
-              <caret line="80" column="28" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="725" />
+              <caret line="80" column="716" lean-forward="true" selection-start-line="80" selection-start-column="716" selection-end-line="80" selection-end-column="716" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/docs/structure.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="72" column="168" selection-start-line="72" selection-start-column="168" selection-end-line="72" selection-end-column="168" />
-              <folding>
-                <element signature="n#style#0;n#p#0;n#div#0;n#section#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docs/teacher-view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="19" column="58" lean-forward="true" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
+            <state relative-caret-position="400">
+              <caret line="144" column="20" selection-start-line="144" selection-start-column="20" selection-end-line="144" selection-end-column="76" />
               <folding>
                 <element signature="n#style#0;n#p#3;n#section#0;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#section#0;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -177,10 +141,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/scriptwriters.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="399">
+              <caret line="75" column="208" selection-start-line="75" selection-start-column="208" selection-end-line="75" selection-end-column="208" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/next-steps.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1750">
-              <caret line="70" selection-start-line="70" selection-end-line="70" />
+            <state relative-caret-position="212">
+              <caret line="71" column="360" selection-start-line="71" selection-start-column="360" selection-end-line="71" selection-end-column="360" />
             </state>
           </provider>
         </entry>
@@ -188,14 +161,36 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/how-to-use-reves.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4225">
-              <caret line="169" selection-start-line="169" selection-end-line="169" />
+            <state relative-caret-position="238">
+              <caret line="122" column="76" selection-start-line="122" selection-start-column="76" selection-end-line="122" selection-end-column="76" />
               <folding>
                 <element signature="n#style#0;n#p#3;n#section#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#section#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#section#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#div#2;n#div#0;n#section#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#div#3;n#div#0;n#section#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/docs/scriptwriters-index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="74">
+              <caret line="60" column="21" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/revesapp.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="548">
+              <caret line="402" column="47" selection-start-line="402" selection-start-column="47" selection-end-line="402" selection-end-column="47" />
+              <folding>
+                <element signature="e#0#23#0" expanded="true" />
+                <marker date="1542813032983" expanded="true" signature="15105:15106" ph="..." />
               </folding>
             </state>
           </provider>
@@ -216,7 +211,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docs/get-the-number-result.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
+            <state relative-caret-position="1825">
               <caret line="73" column="18" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
               <folding>
                 <element signature="n#style#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -300,7 +295,6 @@
         <option value="$PROJECT_DIR$/static/css/style.css" />
         <option value="$PROJECT_DIR$/docs/elements.html" />
         <option value="$PROJECT_DIR$/docs/_macro.html" />
-        <option value="$PROJECT_DIR$/docs/scriptwriters.html" />
         <option value="$PROJECT_DIR$/docs/get-the-number.html" />
         <option value="$PROJECT_DIR$/docs/directors-index.html" />
         <option value="$PROJECT_DIR$/docs/scriptwriters-index.html" />
@@ -308,23 +302,24 @@
         <option value="$PROJECT_DIR$/docs/collections-index.html" />
         <option value="$PROJECT_DIR$/docs/companies-index.html" />
         <option value="$PROJECT_DIR$/docs/keywords-index.html" />
-        <option value="$PROJECT_DIR$/docs/next-steps.html" />
-        <option value="$PROJECT_DIR$/docs/how-to-use-reves.html" />
         <option value="$PROJECT_DIR$/form.py" />
-        <option value="$PROJECT_DIR$/revesapp.py" />
         <option value="$PROJECT_DIR$/docs/get-the-number-result.html" />
         <option value="$PROJECT_DIR$/docs/index.html" />
         <option value="$PROJECT_DIR$/docs/reason-why.html" />
         <option value="$PROJECT_DIR$/docs/structure.html" />
+        <option value="$PROJECT_DIR$/docs/scriptwriters.html" />
+        <option value="$PROJECT_DIR$/docs/next-steps.html" />
         <option value="$PROJECT_DIR$/docs/teacher-view.html" />
+        <option value="$PROJECT_DIR$/docs/how-to-use-reves.html" />
+        <option value="$PROJECT_DIR$/revesapp.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1611" />
-    <option name="y" value="-46" />
-    <option name="width" value="1356" />
-    <option name="height" value="883" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -404,9 +399,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2568" y="-113" width="2576" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.087436" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19009902" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -430,13 +425,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/flask_reves/revesapp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" selection-start-line="7" selection-end-line="8" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs2/_macro.py" />
     <entry file="file://$PROJECT_DIR$/docs2/form.py" />
     <entry file="file://$PROJECT_DIR$/static/js/init.js">
@@ -543,24 +531,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/scriptwriters.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="93" column="17" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/docs/directors-index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="60" column="21" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/scriptwriters-index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="64" column="37" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -592,17 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/revesapp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3325">
-          <caret line="136" column="8" selection-start-line="136" selection-start-column="8" selection-end-line="137" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-            <marker date="1542574798571" expanded="true" signature="15036:15037" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/form.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -621,23 +584,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/next-steps.html">
+    <entry file="file://$PROJECT_DIR$/docs/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1750">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        <state relative-caret-position="2375">
+          <caret line="95" column="138" selection-start-line="95" selection-start-column="138" selection-end-line="95" selection-end-column="138" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/how-to-use-reves.html">
+    <entry file="file://$PROJECT_DIR$/docs/structure.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4225">
-          <caret line="169" selection-start-line="169" selection-end-line="169" />
+        <state relative-caret-position="1800">
+          <caret line="72" column="168" selection-start-line="72" selection-start-column="168" selection-end-line="72" selection-end-column="168" />
           <folding>
-            <element signature="n#style#0;n#p#3;n#section#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#section#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#section#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#2;n#div#0;n#section#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#3;n#div#0;n#section#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#section#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -654,7 +616,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/docs/get-the-number-result.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
+        <state relative-caret-position="1825">
           <caret line="73" column="18" selection-start-line="73" selection-start-column="18" selection-end-line="73" selection-end-column="18" />
           <folding>
             <element signature="n#style#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -664,22 +626,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/index.html">
+    <entry file="file://$PROJECT_DIR$/docs/scriptwriters.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="95" column="138" selection-start-line="95" selection-start-column="138" selection-end-line="95" selection-end-column="138" />
+        <state relative-caret-position="399">
+          <caret line="75" column="208" selection-start-line="75" selection-start-column="208" selection-end-line="75" selection-end-column="208" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/scriptwriters-index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="60" column="21" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/next-steps.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="71" column="360" selection-start-line="71" selection-start-column="360" selection-end-line="71" selection-end-column="360" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/teacher-view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="144" column="20" selection-start-line="144" selection-start-column="20" selection-end-line="144" selection-end-column="76" />
           <folding>
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#3;n#section#0;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#section#0;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#section#0;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#2;n#div#0;n#section#0;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#3;n#div#0;n#section#0;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/structure.html">
+    <entry file="file://$PROJECT_DIR$/docs/how-to-use-reves.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="72" column="168" selection-start-line="72" selection-start-column="168" selection-end-line="72" selection-end-column="168" />
+        <state relative-caret-position="238">
+          <caret line="122" column="76" selection-start-line="122" selection-start-column="76" selection-end-line="122" selection-end-column="76" />
           <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#section#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#3;n#section#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#section#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#section#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#2;n#div#0;n#section#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#3;n#div#0;n#section#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/revesFunctions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -687,20 +687,17 @@
     <entry file="file://$PROJECT_DIR$/docs/reason-why.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="80" column="28" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="725" />
+          <caret line="80" column="716" lean-forward="true" selection-start-line="80" selection-start-column="716" selection-end-line="80" selection-end-column="716" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docs/teacher-view.html">
+    <entry file="file://$PROJECT_DIR$/revesapp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="19" column="58" lean-forward="true" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
+        <state relative-caret-position="548">
+          <caret line="402" column="47" selection-start-line="402" selection-start-column="47" selection-end-line="402" selection-end-column="47" />
           <folding>
-            <element signature="n#style#0;n#p#3;n#section#0;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#section#0;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#section#0;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#2;n#div#0;n#section#0;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#3;n#div#0;n#section#0;n#div#0;n#section#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#0#23#0" expanded="true" />
+            <marker date="1542813032983" expanded="true" signature="15105:15106" ph="..." />
           </folding>
         </state>
       </provider>

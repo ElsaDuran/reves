@@ -68,14 +68,22 @@
 						
 					<!-- Content -->
 						<section id="content">
-							<h3>What is Reves?</h3>
-							<p>Reves is a Machine Learning project based on predicting movie revenue from the basic features of a movie, as genre, cast, crew, release date, budget, etc. It is a business tool mainly aimed for film producers, who want to know how much money the movie is going to make before even producing it.</p>
-							<h3>Why did we decide to develope this specific project?</h3>
-							<p>We wanted to create a project that would actually make sense in real life. We didn’t want to spend hours of work just for a research project to store in a drawer. The movie topic was chosen just because we liked it, and the idea of making a data-based business tool came to us analyzing the data we had, and thinking how could we make money out of it.</p>
-							<h3>Why is it relevant as a Final Project?</h3>
-							<p>During the developing of Reves, we have had to face the different challenges that have been raised as such from the teachers during this course: exhaustive data cleaning,chossing relevant variables, identifying and applying the most convenient ML model, visualizing the data, and, as a bonus track, applying a Deep Learning neural network in order to experience this technology and to try to better the accuracy, despite the loss of information about how the model actually works.</p>
-							<h3>Why would it relevant for the industry?</h3>
-							<p>This is a basic model developed using The Movies Dataset, a public Project in Kaggle. Of course, the accuracy of our model is conditioned to the limited ammount of data we have in this public dataset, but Reve hasn’t work its magic yet. It has a huge low-cost-growth-potential that will make it extremely attractive for film producing companies. The idea is simple: It is way more cheaper to collect the basic data from Internet for every movie ever made thank producing a single movie. Productions companies would only have to invest some money in harvesting the data and then apply the model (with some restructuring). Voilá: profit margins will rise.</p>
+							<h3>Reves basics</h3>
+							<p>As you already should know, Reves is a final project developed for our Master in Data Science degree. It's a basic model developed using The Movies Dataset, a public Project in Kaggle. Of course, the accuracy of our model is conditioned to the limited ammount of data we have in this public dataset and its reliability.</br></br>At the same time, you ought to know that we had limited time for building the project, and that is why there are some improvements yet to come.</p>
+							<h3>Technical improvements</h3>
+							<ul>
+								<li><strong>Responsive design: </strong></br>If you download the app in local, you can check that it is full responsive. Unfortunately, the app deployed in Heroku needs some adjustments for responsive design. </p></li>
+								<li><strong>Autocomplete fields in form: </strong></br>In this initial version of Reves, the user has to check the correct spelling of those names in a different page called Index. To better user's experience using the form, we will add autocomplete fields for features like directors, scriptwriters, etc.</p></li>
+								<li><p><strong>Database: </strong></br>We will add a SQL or SQLlite database to keep track of all the inputs collected by the app's form. We will use this info for trend analysis, know what the production companies are seeking and how they interact with our app, and also to be able to add a export in Excel button, so the company can have all their different iterations with the form store in one file to analyze and visualize the options.</p></li>
+							</ul>
+							<h3>Content & model improvements</h3>
+							<ul>
+								<li><strong>Overview's NLP Analysis: </strong></br>On the initial dataframe we had an Overview column with a text that talks about the plot of the movie. It would be very interesting to analyize this text with NLP techniques to add extra info about the movie's plot to the model</p></li>
+								<li><strong>Lower model's error: </strong></br>If you use a new or fake name in directors, cast names or other typelike features, the final predicted number is still pretty high. This is why, for unknown values, Reves applies an average score. We hope that in future versions of Reves, when we have more than 5K rows in our dataframe, we can change this parameter and allow the model to learn better to better data and minimize this error.</p></li>
+								<li><strong>Complement model with social listening: </strong></br>We think that it could be pretty cool and interesting to complement the information given to Reves with a social listening factor/score based on similar movies. Sometimes, prior to the movie's releasing, there's a social speech that can affect the final movie's box office. If people are enthusiastic about the movie and talk about it at social platforms, there's more probability of more audience.</p></li>
+								<li><p><strong>Use producers data: </strong></br>As explained in notebook 1, we have found extra databases with info about directors and scriptwirters to merge with the initial dataframe. That's why we have been able to use this features in our model. However, we couldn't find a dataset with producers info, thought we think it will add significant value to our model.</p></li>
+								<li><p><strong>Analyze First Weekend Box Office:</strong></br> </strong>Experts say that the final revenue is extremely related to the movie's first weekend box office. It will be great tho have this data available to check if it's actually true and, in this case, use is as an input for the model.</p></li>
+								</ul>
 						</section>
 								
 				</div>

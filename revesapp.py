@@ -79,8 +79,8 @@ def result():
         cast_gender_dict = pickle.load(handle)
     with open("transformation/directors_dict.pickle", "rb") as handle:
         directors_dict = pickle.load(handle)
-    with open("transformation/writers_dict.pickle", "rb") as handle:
-        writers_dict = pickle.load(handle)
+    #with open("transformation/writers_dict.pickle", "rb") as handle:
+        writers_dict=pickle.load(open("./transformation/writers_dict.pickle", "rb"))
     with open("transformation/keywords_dict.pickle", "rb") as handle:
         keywords_dict = pickle.load(handle)
     with open("transformation/month_dict.pickle", "rb") as handle:
@@ -104,7 +104,7 @@ def result():
         cast_names = str.split(comment_form.cast_names.data, ",")
         main_actor_genre = c = str(comment_form.main_actor_genre.data).split(" ")
         collection = comment_form.bellongsToCollection.data
-        collection_name = str.split(comment_form.collectionName.data, " ")
+        collection_name = str.split(comment_form.collectionName.data, "...")
         drama = comment_form.drama.data
         comedy = comment_form.comedy.data
         thriller = comment_form.thriller.data
@@ -356,7 +356,7 @@ def nextsteps():
 @app.route("/directors-index.html")
 def directors():
     import pandas as pd
-    directors=pd.read_pickle("./docs/dicts/directors_dict.pickle")
+    directors=pd.read_pickle("./transformation/directors_dict.pickle")
     b=sorted(list(directors.keys()))
     c=len(b)
     return render_template("directors-index.html",directors=directors,b=b,c=c)
@@ -364,7 +364,7 @@ def directors():
 @app.route("/scriptwriters-index.html")
 def scriptwritersindex():
     import pandas as pd
-    scriptwriters=pd.read_pickle("./docs/dicts/writers_dict.pickle")
+    scriptwriters=pd.read_pickle("./transformation/writers_dict.pickle")
     b=sorted(list(scriptwriters.keys()))
     c=len(b)
     return render_template("scriptwriters-index.html",scriptwriters=scriptwriters,b=b,c=c)
@@ -376,7 +376,7 @@ def teacher():
 @app.route("/collections-index.html")
 def collectionsindex():
     import pandas as pd
-    collections =pd.read_pickle("./docs/dicts/collection.pickle")
+    collections =pd.read_pickle("./transformation/collection.pickle")
     b=sorted(list(collections.keys()))
     c=len(b)
     return render_template("collections-index.html",collections=collections,b=b,c=c)
@@ -384,7 +384,7 @@ def collectionsindex():
 @app.route("/cast-index.html")
 def castindex():
     import pandas as pd
-    cast=pd.read_pickle("./docs/dicts/cast_dict.pickle")
+    cast=pd.read_pickle("./transformation/cast_dict.pickle")
     b=sorted(list(cast.keys()))
     c=len(b)
     return render_template("cast-index.html",cast=cast,b=b,c=c)
@@ -392,7 +392,7 @@ def castindex():
 @app.route("/keywords-index.html")
 def keywordsindex():
     import pandas as pd
-    keywords=pd.read_pickle("./docs/dicts/keywords_dict.pickle")
+    keywords=pd.read_pickle("./transformation/keywords_dict.pickle")
     b=sorted(list(keywords.keys()))
     c = len(b)
     return render_template("keywords-index.html",keywords=keywords,b=b,c=c)
@@ -400,7 +400,7 @@ def keywordsindex():
 @app.route("/companies-index.html")
 def companiesindex():
     import pandas as pd
-    companies=pd.read_pickle("./docs/dicts/production_company_dict.pickle")
+    companies=pd.read_pickle("./transformation/production_company_dict.pickle")
     b=sorted(list(companies.keys()))
     c=len(b)
     return render_template("companies-index.html",companies=companies,b=b,c=c)
