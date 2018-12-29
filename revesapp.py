@@ -2,10 +2,14 @@ from flask import Flask
 from flask import render_template
 from flask import request
 import form
+from models import db
+from models import movies
+from config import DevelopmentConfig
 
 
 
 app=Flask(__name__,template_folder="docs",static_folder="static")
+app.config.from_object(DevelopmentConfig)
 
 @app.route("/")
 def index():
@@ -92,6 +96,7 @@ def result():
 
     if request.method == "POST":
 
+
         # loading data from comment form
 
         if len(title)==0:
@@ -160,6 +165,7 @@ def result():
             elif planguage == 2:
                 language = "no"
 
+
             data = [directors,
                     scriptwriters,
                     collection_name,
@@ -175,6 +181,7 @@ def result():
                     title,
                     genres_count,
                     main_actor_genre]
+
 
             x = pd.DataFrame([data], columns=['directors', 'writers', 'belongs_to_collection', 'genres',
                                               'original_language', 'production_companies', 'runtime', 'keywords',
@@ -281,7 +288,23 @@ def result():
             elif weekday[0]=="7":
                 weekday="Sunday"
 
-
+        # database
+        movie = movies(title=title,
+                       directors=directors,
+                       scriptwriters=scriptwriters,
+                       collection_name = collection_name,
+                       genres = genres,
+                       language=language,
+                       production_companies=production_companies,
+                       runtime=runtime,
+                       keywords=keywords,
+                       month=month,
+                       weekday=weekday,
+                       cast_names=cast_names,
+                       companies_count=companies_count,
+                       genres_count=genres_count,
+                       main_actor_genre=main_actor_genre,
+                       revenue=revenue)
 
     return render_template("get-the-number-result.html",
                            form=comment_form,
@@ -406,4 +429,9 @@ def companiesindex():
     return render_template("companies-index.html",companies=companies,b=b,c=c)
 
 if __name__ == '__main__':
+    db.init_app(app)
+    #init app
+    with app.app_context():
+        db.create_all()
+
     app.run(debug=True)
