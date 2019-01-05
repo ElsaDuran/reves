@@ -5,8 +5,8 @@ db=SQLAlchemy()
 
 #cada atributo de class será una columna en la base de datos
 class movies(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
     __tablename__="movies_database"
-    id=db.Column(db.Integer, primary_key=True)
     create_date = db.Column(db.DateTime, default=datetime.datetime.now)
     title=db.Column(db.String(80))
     directors=db.Column(db.String)
