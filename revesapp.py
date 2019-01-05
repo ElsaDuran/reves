@@ -4,12 +4,9 @@ from flask import request
 import form
 from models import db
 from models import movies
-from config import DevelopmentConfig
-
 
 
 app=Flask(__name__,template_folder="docs",static_folder="static")
-app.config.from_object(DevelopmentConfig)
 
 @app.route("/")
 def index():
@@ -433,5 +430,4 @@ if __name__ == '__main__':
     #init app
     with app.app_context():
         db.create_all()
-
     app.run(debug=True)

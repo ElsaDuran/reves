@@ -23,5 +23,5 @@ class movies(db.Model):
     companies_count=db.Column(db.Integer)
     genres_count=db.Column(db.Integer)
     main_actor_genre=db.Column(db.String(10))
-    revenue=db.Columns(db.Float)
+    revenue=db.Column(db.Float)
 
